@@ -1,0 +1,40 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: lightblue;
+  padding-top: 10%;
+  font-size: 28px;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 100;
+
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center;
+  
+  li {
+    display: inline-block;
+    margin: 0 30px;
+    line-height: 50px;
+    width: 54px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    
+      transition: all 300ms ease;
+  
+  &:hover {
+    transform: rotate(360deg);
+    background: gray;
+    color: darkblue;
+  }
+    
+  }
+}
