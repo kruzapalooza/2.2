@@ -1,12 +1,13 @@
-/* Why does container go before body?*/
 .container {
-  /* margin: 0 auto; */
-  /* comment out to keep left-justified */
-  width: 960px; }
+  /* margin: 0 auto;  /* comment out to keep left-justified */
+  width: 100%;
+  height: 55px; }
 
 .signature {
+  width: 250px;
+  height: 60px;
   float: left;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
   font-family: "Calligraffitti";
   font-size: 25px;
@@ -15,39 +16,54 @@
 
 /* Defaults for body items */
 body {
-  /* font: 75% georgia, sans-serif; */
-  font-family: "Comic Sans MS", Helvetica, Arial, sans-serif;
-  font-size: 80%;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 100%;
   line-height: 1.88889;
   color: #B89300;
   /* background: #fff url('galaxy.jpg'); */
-  background-color: #341931;
-  margin: 0;
+  background-color: #F3FFCF;
+  margin: auto;
   padding: 0;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; }
+  body .jpg-frame {
+    float: left;
+    position: relative;
+    width: 250px;
+    height: 400px; }
 
 header {
   position: fixed;
-  background-color: #615145;
-  opacity: 0.8;
+  background-color: #000000;
+  font: 100% georgia, sans-serif;
+  opacity: 1;
   top: 0;
   left: 0;
   width: 100%;
   height: 60px;
   z-index: 1000000; }
   header .logo {
-    float: right;
-    background-color: black; }
+    background-color: black;
+    float: right; }
   header nav {
     float: left;
     background-color: black; }
     header nav #main-nav > li {
       float: left;
       position: relative;
-      width: 200px;
-      height: 60px; }
+      width: 150px;
+      height: 60px;
+      text-align: center;
+      vertical-align: bottom; }
+    header nav li:before {
+      position: absolute;
+      left: 0px;
+      background-color: #4A4031;
+      content: "";
+      width: 1px;
+      height: 100%; }
     header nav ul {
+      height: 60px;
       margin: 0;
       padding: 0;
       list-style-type: none; }
@@ -93,13 +109,14 @@ footer {
     text-align: center; }
 
 .homepage-hero {
+  float: left;
   width: 100%;
   height: 125px;
   padding: 16px;
   font-size: 26pt; }
 
 #content {
-  padding-top: 150px; }
+  padding-top: 10px; }
 
 section {
   margin-bottom: 50px; }
