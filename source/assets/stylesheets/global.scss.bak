@@ -1,0 +1,272 @@
+
+
+header {
+  position: fixed;
+  background-color: #000000;
+  opacity: 1; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000000;
+
+  .logo {
+    background-color: black;
+    float: right;
+  }
+
+  nav {
+    float: left;
+    background-color: black;
+  
+
+    #main-nav > li {
+      float: left;
+      position: relative; 
+      width: 150px;
+      height: 60px;
+      text-align: center;
+      vertical-align: bottom;
+    }
+  
+    li:before {
+      position: absolute;
+      left: 0px;
+      background-color: #4A4031;   
+      content: "";
+      width: 1px;
+      height: 100%;
+      outline-style: dotted;
+      outline-color: green;
+    } 
+
+    ul {
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      list-style-type: none; 
+    
+      li {
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -moz-transition: background-color 0.3s ease-in-out;
+        -ms-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+      }
+
+      li:hover {
+        background-color: #000047; /* dark blue? */
+        outline-style: dotted;
+        outline-color: purple;
+      }
+
+      .dropdown {
+        /* display: none; */
+        position: absolute;
+        margin-top: -9999px; 
+        top: 60px;
+        left: 0;
+        width: 100%;
+        opacity: 0; /* so menus aren't visible at first */
+        transition: opacity 0.4s ease-in-out; 
+      }
+
+      .dropdown li:hover {
+        background-color: #000047;
+      }
+
+      li a {
+        display: block;
+        padding: 8px 8px 8px 8px;
+      }
+    }
+
+    li.has-dropdown:hover > ul.dropdown {
+      margin-top: 0;  /* required for drop-down to initiate */ 
+      opacity: 1;     /* make menu visible on mouse hover   */
+    }
+
+  }
+}
+
+
+.container {
+  /* margin: 0 auto;  /* comment out to keep left-justified */
+  width: 100%;
+  height: 100%;
+}
+
+.signature {
+  width: 250px;
+  height: 60px;
+  float: left;
+  text-align: center;
+  vertical-align: top;
+  font-family: "Calligraffitti";
+  font-size: 25px;
+  font-style: italic;
+  font-variant: normal;
+}
+
+/* Defaults for body items */
+body { 
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.88889;
+  color: #B89300; 
+  /* background: #fff url('galaxy.jpg'); */ 
+  background-color: #F3FFCF;
+  margin: auto; 
+  padding: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: #2A363B;
+  box-shadow: 2px -2px 30px #000;
+}
+
+.footer_wrap {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  outline-color: green;
+  outline-style: dotted;
+
+    .container {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+
+}
+
+.homepage-hero {
+  float: left;
+  width: 100%;
+  height: 125px;
+  padding: 16px;
+  font-size: 26pt;
+
+  .jpg_frame {
+  margin-bottom: 50px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  }
+
+  .jpg_blurb {
+    float: right;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    font-size: 10pt;
+    color: green;
+  }
+}
+
+#content {
+  padding-top: 10px;
+  position: relative;
+}
+
+section {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 95%;
+  height: 300px;
+  outline-style: dotted;
+  outline-color: red;
+  background-color: #EDEBE6;
+
+}
+
+
+
+.event {
+  padding: 16px;
+  display: inline-block;
+  margin-right: 25px;
+
+  :last-child {
+    margin-right: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+  }
+
+  .overlay.right_to_left {
+    top: 0;
+    right: 0; /* start at RIGHT first now */
+    width: 0;
+    height: 350px;
+    transition: width 0.5s ease-in-out;
+  }
+
+  .overlay.right_to_left {
+    width: 100%;
+  }
+
+  .overlay.grow {
+    top: 0;
+    left: 0;
+    width: 100%; /* set width maximum initially; gets changed via the 'translate' transform */
+    height: 350px; /* set height maximum initially; gets changed via the 'translate' transform */
+    transform: scale(0); /* make the overlay dimensionless (width and height to 0) by scaling to 0... means essentialy width * 0, which = 0, and height * 0, which is also 0 */
+    transition: transform 0.5s ease-in-out; /* transition the transform! */
+  }
+
+  .overlay.left_to_right {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 0.5s ease-in-out; 
+  }
+}
+
+
+.upcoming_news {
+  overflow: auto;
+}
+
+.upcoming_news .news {
+    outline-color: orange;
+  outline-style: dotted;
+  float: left;
+  width: 150px; 
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* width: 100%; */
+  box-sizing: border-box;
+}
+
+.upcoming_news .news.right {
+  outline-color: blue;
+  outline-style: dotted;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  max-height: 300px;
+  padding-left: 30px;
+  width: 500px;
+  /* overflow-y: auto; scroll up-down */
+}
+
+.upcoming_news .news.right h3 {
+  margin-top: 0;
+}
