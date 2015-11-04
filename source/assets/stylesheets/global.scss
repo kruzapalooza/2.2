@@ -64,11 +64,12 @@ header {
         -webkit-transition: background-color 0.3s ease-in-out;
         -moz-transition: background-color 0.3s ease-in-out;
         -ms-transition: background-color 0.3s ease-in-out;
-        -o-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;       
+        transition: background-color 0.3s ease-in-out;       
       }
 
       li:hover {
-        background-color: #000047; /* dark blue */
+        color: #FFFFFF; /* white */
         outline-style: dotted;
         outline-color: purple;
       }
@@ -158,27 +159,19 @@ body {
     color: red;
   }
   
-  ul {
-    /* position */
-    height: 60px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none; 
-  
-    li {
-      -webkit-transition: background-color 0.3s ease-in-out;
-      -moz-transition: background-color 0.3s ease-in-out;
-      -ms-transition: background-color 0.3s ease-in-out;
-      -o-transition: background-color 0.3s ease-in-out;
-      transition: color 0.3s ease-in-out;
+    .product_description {
+       font-size: 14px;    
+       -webkit-transition: color 0.3s ease-in-out;
+       -moz-transition: color 0.3s ease-in-out;
+       -ms-transition: color 0.3s ease-in-out;
+       -o-transition: color 0.3s ease-in-out;
+       transition: color 0.3s ease-in-out;
+    }
+    
+    .product_description:hover {
+        color: yellow; 
     }
 
-    /* appearance */
-    li:hover {
-      background-color: #000047; /* dark blue? */
-    }
-
-  }
 
   .jpg_wrap {
     /* position */
@@ -193,7 +186,7 @@ body {
     height: 300px;
 
     /* debug */
-    outline-style: dashed;
+    outline-style: dotted;
     outline-color: green;
   }
 
@@ -223,7 +216,7 @@ body {
     height: 20%;
 
     /* appearance */
-    outline-style: dashed;
+    outline-style: dotted;
     outline-color: green;
   }
 
@@ -239,7 +232,7 @@ body {
       width: 100%;
       height: 40%;
       /* appearance transparent */
-      outline-style: dashed;
+      outline-style: dotted;
       outline-color: yellow;
     }
 
@@ -249,7 +242,7 @@ body {
       height: 20%;
       
       /* appearance */
-      outline-style: dashed;
+      outline-style: dotted;
       outline-color: green;
     }
   }
