@@ -1,3 +1,7 @@
+
+/* @import: ""; */
+/* @import "header"; */
+
 *,
 *:before,
 *:after {
@@ -6,15 +10,41 @@
 
 $bg1: #000000;
 
+
+
+@keyframes spin_image {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 100px;
+
+  animation: spin_image 3s infinite;
+
+  /* debug */
+  outline-style: dotted;
+  outline-color: green;
+}
+
+
 header {
   position: fixed;
-  background-color: #000000;
-  opacity: 1; 
   top: 0;
   left: 0;
   width: 100%;
   height: 64px;
   z-index: 1000000;
+
+  background-color: #000000;
+  opacity: 1; 
 
   .signature {
     width: 250px;
@@ -22,6 +52,7 @@ header {
     float: left;
     text-align: center;
     vertical-align: top;
+    
     font-family: "Calligraffitti";
     font-size: 25px;
     font-style: italic;
@@ -29,8 +60,8 @@ header {
   }
 
   .logo {
-    background-color: black;
     float: right;
+    background-color: black;
   }
 
   nav {
@@ -208,6 +239,7 @@ body {
         background: #222222;
       }
     }
+
   }
 
   /* TECH NOTE: organize wraps. Make subclasses, inheritances. */ 
