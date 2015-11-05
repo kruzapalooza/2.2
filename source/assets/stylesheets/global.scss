@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+$bg1: #000000;
+
 header {
   position: fixed;
   background-color: #000000;
@@ -166,12 +168,17 @@ body {
        -ms-transition: color 0.3s ease-in-out;
        -o-transition: color 0.3s ease-in-out;
        transition: color 0.3s ease-in-out;
+
+       &:hover { 
+         color: purple;
+       }
     }
     
+    /*
     .product_description:hover {
         color: yellow; 
     }
-
+*/
 
   .jpg_wrap {
     /* position */
@@ -182,12 +189,25 @@ body {
     margin: 5px;
     float: left;
     margin: 10px;
-    width: 200px;
-    height: 300px;
 
     /* debug */
     outline-style: dotted;
-    outline-color: green;
+    outline-color: yellow;
+
+    .book {
+      width: 200px;
+      height: 300px;
+    }
+
+    .link {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+
+      &:hover { 
+        background: #222222;
+      }
+    }
   }
 
   /* TECH NOTE: organize wraps. Make subclasses, inheritances. */ 
@@ -231,9 +251,10 @@ body {
       /* position */
       width: 100%;
       height: 40%;
-      /* appearance transparent */
+      /* appearance */
+
       outline-style: dotted;
-      outline-color: yellow;
+      outline-color: green;
     }
 
     .short {
@@ -278,11 +299,12 @@ body {
 
 footer {
   /* position */
-  display: inline-block; /* TECH NOTE: inline and block left this in middle */ 
+  display: block; /* TECH NOTE: inline and block left this in middle */ 
     /* of page, but inline-block moved this to bottom of page */ 
   position: relative; /* TECH NOTE: Change this to absolute and ask why it moves up */
   width: 100%; 
   height: 150px;
+  clear: both;
   
   /* appearance */
   background-color: #2A363B; /* gray */
