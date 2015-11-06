@@ -21,7 +21,7 @@ $bg1: #000000;
 }
 
 .spinner {
-  position: absolute;
+  position: relative;
   display: block;
   width: 100px;
   height: 100px;
@@ -150,7 +150,7 @@ body {
     height: 500px;
     
     /* appearance */ 
-    background: #64908A; /* mellow green */
+    background: #030D4F; /* dark blue / corben */
     border-radius: 20px;
   }
 
@@ -197,8 +197,9 @@ body {
 
     .narrow {
       /* position */
-      width: 20%;
+      width: 150px;
       height: 20%;
+
       
       /* appearance */
       outline-style: dotted;
