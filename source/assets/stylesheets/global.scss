@@ -27,10 +27,6 @@ $bg1: #000000;
   height: 100px;
 
   animation: spin_image 3s infinite;
-
-  /* debug */
-  outline-style: dotted;
-  outline-color: green;
 }
 
 
@@ -212,6 +208,9 @@ body {
     position: relative;
     width: 98%;
     height: 72px;
+
+    outline-style: dotted;
+    outline-color: gray;
   }
 
   .item_wrap {
