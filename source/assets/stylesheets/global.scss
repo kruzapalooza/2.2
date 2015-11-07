@@ -8,7 +8,16 @@
     box-sizing: border-box;
 }
 
-$bg1: #000000;
+$body-bg: #B89300;
+$wrap-bg: #7A4E48;
+$title-bg: #AAAAAA;
+$graphic-bg: #B28774;
+$descr-and-links-bg: #84ABAA;
+$links-bg: #555555;
+$descr-bg: #C5CEAE;
+
+$wrap-height: 400px;
+$wrap-corner: 20px;
 
 
 @keyframes spin_image {
@@ -39,7 +48,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.88889;
-  color: #B89300; 
+  color: $body-bg;
   background-color: #F3FFCF; /* mellow yellow */
  
   line-height: 1.5;
@@ -97,11 +106,6 @@ body {
        }
     }
     
-    /*
-    .product_description:hover {
-        color: yellow; 
-    }
-*/
 
   .jpg_wrap {
     /* position */
@@ -164,45 +168,6 @@ body {
     outline-color: green;
   }
 
-  .wrap {
-    /* position */
-    display: block;
-    position: relative;
-    margin: 5px;
-    padding: 5px;
-    
-    .tall {
-      /* position */
-      width: 100%;
-      height: 40%;
-      /* appearance */
-
-      outline-style: dotted;
-      outline-color: green;
-    }
-
-    .short {
-      /* position */
-      width: 100%;
-      height: 20%;
-      
-      /* appearance */
-      outline-style: dotted;
-      outline-color: green;
-    }
-
-    .narrow {
-      /* position */
-      width: 150px;
-      height: 20%;
-
-      
-      /* appearance */
-      outline-style: dotted;
-      outline-color: black;           
-    }
-  }
-
   .screen_wide_spacer { /* TECH NOTE: Is there a better solution */
     /* transparent spacer, e.g., btw fixed header and other body elements */
     position: relative;
@@ -231,6 +196,84 @@ body {
     width: 30%;
     border-radius: 20px;
 
+  }
+
+  .wrap {
+    /* position */
+    display: block;
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    width: 99%;
+    height: $wrap-height;
+
+    /* appearance */
+    background: $wrap-bg;
+    border-radius: $wrap-corner;
+
+    .title {
+      /* position */
+      width: 99%;
+      height: 20%;
+      margin: inherit;
+      padding: inherit;
+      
+      /* appearance */
+      background: $title-bg;
+      border-radius: inherit;
+
+    }
+
+    .graphic {
+      /* position */
+      float: left;
+      width: 20%;
+      height: 75%;
+      margin: inherit;
+      padding: inherit;
+
+      /* appearance */
+      background: $graphic-bg;
+      border-radius: inherit;
+
+    }
+
+    .descr-and-links {
+      /* position */
+      float: right;
+      width: 78%;
+      height: 75%;
+      margin: inherit;
+      padding: inherit;
+
+      /* appearance */
+      background: $descr-and-links-bg;
+      border-radius: inherit;
+
+      .description {
+        /* position */
+        width: 99%;
+        height: 45%;
+        margin: inherit;
+        padding: inherit; 
+
+        /* appearance */
+        background: $descr-bg;
+        border-radius: inherit;    
+      }
+
+      .links {
+        /* position */
+        width: 99%;
+        height: 45%;
+        margin: inherit;
+        padding: inherit;  
+
+        /* appearance */
+        background: $links-bg;
+        border-radius: inherit;
+      }       
+    }
   }
 
 }
