@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+/* position variables */
+$wrap-height: 400px;
+$wrap-corner: 20px;
+$wrap-margin: 5px;
+$wrap-padding: 5px; 
+
+
+/* appearance variables */
 $body-bg: #B89300;
 $wrap-bg: #7A4E48;
 $title-bg: #AAAAAA;
@@ -16,10 +24,7 @@ $descr-and-links-bg: #84ABAA;
 $links-bg: #555555;
 $descr-bg: #C5CEAE;
 
-$wrap-height: 400px;
-$wrap-corner: 20px;
-
-
+/* animations */
 @keyframes spin_image {
   0% {
     transform: rotate(0deg);
@@ -37,7 +42,6 @@ $wrap-corner: 20px;
 
   animation: spin_image 3s infinite;
 }
-
 
 body { 
   /* position */
@@ -229,8 +233,11 @@ body {
       float: left;
       width: 20%;
       height: 75%;
-      margin: inherit;
-      padding: inherit;
+      margin: $wrap-margin;
+      padding-top: $wrap-padding + 5px;
+      padding-right: $wrap-padding;
+      padding-bottom: $wrap-padding;
+      padding-left: $wrap-padding + 15px;
 
       /* appearance */
       background: $graphic-bg;
@@ -243,8 +250,8 @@ body {
       float: right;
       width: 78%;
       height: 75%;
-      margin: inherit;
-      padding: inherit;
+      margin: $wrap-margin;
+      padding: $wrap-padding;
 
       /* appearance */
       background: $descr-and-links-bg;
@@ -254,8 +261,8 @@ body {
         /* position */
         width: 99%;
         height: 47%;
-        margin: inherit;
-        padding: inherit; 
+        margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
+        padding: $wrap-padding; 
 
         /* appearance */
         background: $descr-bg;
@@ -266,13 +273,30 @@ body {
         /* position */
         width: 99%;
         height: 47%;
-        margin: inherit;
-        padding: inherit;  
+        margin: ($wrap-margin + 5px) $wrap-margin $wrap-margin $wrap-margin;
+        padding: $wrap-padding; 
 
         /* appearance */
         background: $links-bg;
         border-radius: inherit;
-      }       
+
+
+      }
+
+      .button {
+        background: inherit;
+        font-family: Helvetica Neue;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        transition: all 250ms linear;
+
+        &:hover{
+          background-color: white;
+          color: $links-bg;
+        }
+      }   
+
     }
   }
 
