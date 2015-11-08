@@ -19,9 +19,10 @@ $wrap-padding: 5px;
 $body-bg: #B89300;
 $wrap-bg: #7A4E48;
 $title-bg: #AAAAAA;
-$graphic-bg: #7A4E48; /* same as wrap bg */
+$graphic-bg: #333333; /* same as wrap bg */
 $descr-and-links-bg: #84ABAA;
-$links-bg: #333333;
+$links-bg: #6B3162;
+$text-bg: #333333;
 $descr-bg: #C5CEAE;
 
 /* animations */
@@ -176,9 +177,6 @@ body {
     position: relative;
     width: 98%;
     height: 72px;
-
-    outline-style: dotted;
-    outline-color: gray;
   }
 
   .item_wrap {
@@ -234,6 +232,7 @@ body {
       /* position */
       float: left;
       width: 20%;
+      min-width: 250px;
       height: 75%;
       margin: $wrap-margin;
       padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
@@ -266,7 +265,7 @@ body {
           padding: $wrap-padding + 5px; 
 
           /* appearance */
-          background-color: $links-bg;
+          background: $links-bg;
           border-radius: inherit;
           font-family: "Arial";
           font-size: 28px;
@@ -294,22 +293,23 @@ body {
           padding: $wrap-padding + 5px; 
 
           /* appearance */
-          background-color: $links-bg;
+          background: $text-bg;
           border-radius: inherit;
           font-family: "Arial";
           font-size: 18px;
           color: $descr-and-links-bg;
         }
 
-        .graphic-descr {
+        .graphic-right {
           /* position */
           float: right;
           width: 20%;
+          min-width: 195px;
           height: 95%;
           margin: $wrap-margin;
           padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
 
-          background: $links-bg;
+          background: $graphic-bg;
           border-radius: inherit;
         }
 
@@ -317,10 +317,10 @@ body {
 
       .links {
         /* position */
-        width: 99%;
-        height: 25%;
+        width: 200px;
+        height: 28%;
         margin: ($wrap-margin + 5px) $wrap-margin $wrap-margin $wrap-margin;
-        padding: $wrap-padding; 
+        padding: ($wrap-padding + 5px) $wrap-margin $wrap-margin $wrap-margin;
 
         /* appearance */
         background: $links-bg;
@@ -331,7 +331,7 @@ body {
           height: 200px;
           width: 25px;
           margin: 15px;
-          padding: 5px;
+          padding: 2px;
 
           /* appearance */
           background: inherit;
@@ -339,7 +339,6 @@ body {
           font-weight: bold;
           color: $descr-and-links-bg;
           border: 1px solid $descr-and-links-bg;
-          text-transform: capitalize;
           border-radius: 5px;
           transition: all 250ms linear;
 
