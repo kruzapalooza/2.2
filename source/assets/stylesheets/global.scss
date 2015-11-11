@@ -59,38 +59,6 @@ body {
   -webkit-font-smoothing: antialiased;
     
 
-  .jpg_wrap {
-    /* position */
-    display: block;
-    position: relative;
-    float: left;
-    padding: 5px;
-    margin: 5px;
-    float: left;
-    margin: 10px;
-
-    /* debug */
-    outline-style: dotted;
-    outline-color: yellow;
-
-    .book {
-      width: 200px;
-      height: 300px;
-    }
-
-    .link {
-      width: 100px;
-      height: 100px;
-      border-radius: 50px;
-
-      &:hover { 
-        background: #222222;
-      }
-    }
-
-  }
-
-
 
   .screen_wide_spacer { /* TECH NOTE: Is there a better solution */
     /* transparent spacer, e.g., btw fixed header and other body elements */
@@ -165,6 +133,34 @@ body {
 
     }
 
+    .cont-l2 {
+    /* position */
+    display: block;
+    float: right;
+    width: 99%;
+    height: auto;
+    margin: $wrap-margin;
+    padding: $wrap-padding;
+
+    /* appearance */
+    background: $descr-and-links-bg;
+    border-radius: inherit;
+
+      .cont-l3
+      {
+        /* position */
+        width: 250px;
+        height: auto;
+        margin: $wrap-margin;
+        padding: $wrap-padding;
+
+        /* appearance */
+        background: $graphic-bg;
+        border-radius: inherit;
+      }
+
+    }
+
     .descr-and-links {
       /* position */
       display: inline;
@@ -232,7 +228,8 @@ body {
           float: right;
           width: 20%;
           min-width: 195px;
-          height: 95%;
+          height: auto;
+          vertical-align: middle;
           margin: $wrap-margin;
           padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
 
