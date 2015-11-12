@@ -75,7 +75,6 @@ body {
     margin: 5px;
     padding: 5px;
     width: 30%;
-    min-width: 300px;
     height: 400px;
     
     /* appearance */
@@ -94,7 +93,6 @@ body {
     margin: 5px;
     padding: 5px;
     width: 99%;
-    min-width: 50%;
     height: $wrap-height;
 
     /* appearance */
@@ -104,7 +102,6 @@ body {
     .title {
       /* position */
       width: 99%;
-      min-width: 50%;
       height: 20%;
       margin: inherit;
       padding: inherit;
@@ -122,7 +119,6 @@ body {
       /* position */
       float: left;
       width: 20%;
-      min-width: 250px;
       height: 75%;
       margin: $wrap-margin;
       padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
@@ -136,7 +132,6 @@ body {
     .cont-l2 {
     /* position */
     display: block;
-    float: right;
     width: 99%;
     height: auto;
     margin: $wrap-margin;
@@ -149,7 +144,19 @@ body {
       .cont-l3
       {
         /* position */
-        width: 250px;
+        width: 70%;
+        height: auto;
+        margin: $wrap-margin;
+        padding: $wrap-padding;
+
+        /* appearance */
+        background: $graphic-bg;
+        border-radius: inherit;
+      }
+
+      .cont-l4
+      {
+        width: 20%;
         height: auto;
         margin: $wrap-margin;
         padding: $wrap-padding;
@@ -166,7 +173,6 @@ body {
       display: inline;
       float: right;
       width: 76%;
-      min-width: 38%;
       height: 75%;
       margin: $wrap-margin;
       padding: $wrap-padding;
@@ -180,7 +186,6 @@ body {
           /* position */
           float: left;
           width: 76%;
-          min-width: 38%;
           height: 95%;
           margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
           padding: $wrap-padding + 5px; 
@@ -197,7 +202,6 @@ body {
       .description {
         /* position */
         width: 99%;
-        min-width: 50%;
         height: 65%;
         margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
         padding: $wrap-padding; 
@@ -210,7 +214,6 @@ body {
           /* position */
           float: left;
           width: 76%;
-          min-width: 38%;
           height: 95%;
           margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
           padding: $wrap-padding + 5px; 
@@ -227,7 +230,6 @@ body {
           /* position */
           float: right;
           width: 20%;
-          min-width: 195px;
           height: auto;
           vertical-align: middle;
           margin: $wrap-margin;
