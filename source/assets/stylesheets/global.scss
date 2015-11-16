@@ -119,7 +119,8 @@ body {
       /* position */
       float: left;
       width: 20%;
-      height: 75%;
+      max-width: 100%;
+      height: auto;
       margin: $wrap-margin;
       padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
 
@@ -129,44 +130,7 @@ body {
 
     }
 
-    .cont-l2 {
-    /* position */
-    display: block;
-    width: 99%;
-    height: auto;
-    margin: $wrap-margin;
-    padding: $wrap-padding;
-
-    /* appearance */
-    background: $descr-and-links-bg;
-    border-radius: inherit;
-
-      .cont-l3
-      {
-        /* position */
-        width: 70%;
-        height: auto;
-        margin: $wrap-margin;
-        padding: $wrap-padding;
-
-        /* appearance */
-        background: $graphic-bg;
-        border-radius: inherit;
-      }
-
-      .cont-l4
-      {
-        width: 20%;
-        height: auto;
-        margin: $wrap-margin;
-        padding: $wrap-padding;
-
-        /* appearance */
-        background: $graphic-bg;
-        border-radius: inherit;
-      }
-
-    }
+  
 
     .descr-and-links {
       /* position */
@@ -230,6 +194,7 @@ body {
           /* position */
           float: right;
           width: 20%;
+          max-width: 100%;
           height: auto;
           vertical-align: middle;
           margin: $wrap-margin;
