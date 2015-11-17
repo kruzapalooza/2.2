@@ -24,6 +24,8 @@ $descr-and-links-bg: #84ABAA;
 $links-bg: #6B3162;
 $text-bg: #333333;
 $descr-bg: #C5CEAE;
+$item-text: #FFFFFF;
+$item-bg: #000000;
 
 /* animations */
 @keyframes spin_image {
@@ -67,7 +69,7 @@ body {
     height: 72px;
   }
 
-  .item_wrap {
+  .item-wrap {
     /* position */
     display: block;
     position: relative;
@@ -78,11 +80,23 @@ body {
     height: 400px;
     
     /* appearance */
-    background: #E8CAA4; /* beige */
-    font-size: 25px;
-    color: white;
+    color: $item-text;
+    background-color: $item-bg;
+    font-size: 16pt;
     width: 30%;
     border-radius: 20px;
+
+    .item-descr {
+      /* appearance */
+      color: $item-text;
+      font: 12pt;
+
+    }
+
+    item-link {
+
+
+    }
 
   }
 
