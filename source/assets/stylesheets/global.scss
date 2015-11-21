@@ -89,13 +89,14 @@ body {
     .item-descr {
       /* appearance */
       color: $item-text;
-      font: 12pt;
+      font-size: 10pt;
 
     }
 
-    item-link {
-
-
+    .item-link {
+      /* appearance */
+      color: $item-text;
+      font-size: 10pt;
     }
 
   }
