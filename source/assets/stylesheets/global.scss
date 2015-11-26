@@ -14,7 +14,6 @@ $wrap-corner: 20px;
 $wrap-margin: 5px;
 $wrap-padding: 5px; 
 
-
 /* appearance variables */
 $body-bg: #B89300;
 $wrap-bg: #7A4E48;
@@ -27,24 +26,6 @@ $descr-bg: #C5CEAE;
 $item-text: #FFFFFF;
 $item-bg: #000000;
 
-/* animations */
-@keyframes spin_image {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.spinner {
-  position: absolute;
-  display: block;
-  width: 100px;
-  height: 100px;
-
-  animation: spin_image 3s infinite;
-}
 
 body { 
   /* position */
@@ -60,8 +41,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
     
-
-
   .screen_wide_spacer { /* TECH NOTE: Is there a better solution */
     /* transparent spacer, e.g., btw fixed header and other body elements */
     position: relative;
@@ -127,7 +106,6 @@ body {
       font-family: "Arial";
       font-size: 28px;
       color: $wrap-bg;
-
     }
 
     .graphic {
@@ -142,10 +120,7 @@ body {
       /* appearance */
       background: $graphic-bg;
       border-radius: inherit;
-
     }
-
-  
 
     .descr-and-links {
       /* position */
@@ -161,21 +136,21 @@ body {
       border-radius: inherit;
 
       
-      .title {
-          /* position */
-          float: left;
-          width: 76%;
-          height: 95%;
-          margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
-          padding: $wrap-padding + 5px; 
+      .title {       
+        /* position */
+        float: left;
+        width: 76%;
+        height: 95%;
+        margin: $wrap-margin $wrap-margin ($wrap-margin + 5px) $wrap-margin;
+        padding: $wrap-padding + 5px; 
 
-          /* appearance */
-          background: $links-bg;
-          border-radius: inherit;
-          font-family: "Arial";
-          font-size: 28px;
-          color: $descr-and-links-bg;
-          } 
+        /* appearance */
+        background: $links-bg;
+        border-radius: inherit;
+        font-family: "Arial";
+        font-size: 28px;
+        color: $descr-and-links-bg;
+      } 
 
 
       .description {
