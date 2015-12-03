@@ -10,7 +10,7 @@
 
 /* position variables */
 $wrap-height: 400px;
-$wrap-corner: 20px;
+$wrap-corner: 5px;
 $wrap-margin: 5px;
 $wrap-padding: 5px; 
 
@@ -63,7 +63,8 @@ body {
     background-color: $item-bg;
     font-size: 16pt;
     width: 30%;
-    border-radius: 20px;
+    border-radius: $wrap-corner;
+
 
     .item-descr {
       /* appearance */
@@ -150,6 +151,8 @@ body {
         font-family: "Arial";
         font-size: 28px;
         color: $descr-and-links-bg;
+        text-shadow: 2px 2px #333333;
+        box-shadow: 2px 2px 2px #333333; 
       } 
 
 
@@ -235,6 +238,91 @@ body {
 
 
     }
+  }
+
+  .infiniteCarousel {
+    width: 395px;
+    position: relative;
+  }
+    
+  .infiniteCarousel .wrapper {
+    width: 315px; /* .infiniteCarousel width - (.wrapper margin-left + .wrapper margin-right) */
+    overflow: auto;
+    height: 105px;
+    margin: 0 40px;
+    position: relative;
+    top: 0;
+  }
+    
+  .infiniteCarousel ul a img {
+    border: 5px solid #000;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+    
+  .infiniteCarousel .wrapper ul {
+    width: 840px; /* single item * n */
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    top: 0;
+  }
+    
+  .infiniteCarousel ul li {
+    display:block;
+    float:left;
+    padding: 10px;
+    height: 85px;
+    width: 85px;
+  }
+    
+  .infiniteCarousel ul li img {
+      -webkit-transition: border-color 400ms;
+  }
+    
+  .infiniteCarousel ul:hover li img {
+    border-color: #000;
+  }
+    
+  .infiniteCarousel ul:hover li:hover img {
+    border-color: #333;
+  }
+    
+  .infiniteCarousel ul li a img {
+    display:block;
+  }
+    
+  .infiniteCarousel .arrow {
+    display: block;
+    height: 36px;
+    width: 37px;
+    background: url(images/arrow.png) no-repeat 0 0;
+    text-indent: -999px;
+    position: absolute;
+    top: 37px;
+    cursor: pointer;
+    outline: 0;
+  }
+    
+  .infiniteCarousel .forward {
+    background-position: 0 0;
+    right: 0;
+  }
+    
+  .infiniteCarousel .back {
+    background-position: 0 -72px;
+    left: 0;
+  }
+    
+  .infiniteCarousel .forward:hover {
+    background-position: 0 -36px;
+  }
+    
+  .infiniteCarousel .back:hover {
+    background-position: 0 -108px;
   }
 
 }
