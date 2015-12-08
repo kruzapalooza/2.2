@@ -79,6 +79,18 @@ body {
     }
   }
 
+  #owl-demo .owl-item {
+    margin: 5px;
+    background: green;
+  }
+
+  #owl-demo .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  
+  }
+
   .wrap {
     /* position */
     display: block;
@@ -89,21 +101,9 @@ body {
     height: $wrap-height;
 
     /* appearance */
-    background: $wrap-bg;
+    background: transparent;
     border-radius: $wrap-corner;
-    
-    #owl-demo .item {
-      padding: 5px;
-      margin: 5px;
-      background: green;
-    }
 
-    #owl-demo .item img {
-      display: block;
-      width: 100%;
-      height: auto;
- 
-    }
     
     .title {
       /* position */
