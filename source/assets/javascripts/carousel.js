@@ -3,7 +3,7 @@
 
     $(document).ready(function() {
       
-      alert("HELLO MARS");
+      // alert("HELLO MARS");
 
       $("#owl-demo").owlCarousel({
           autoPlay: 3000, //Set AutoPlay to 3 seconds
