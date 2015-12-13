@@ -34,17 +34,20 @@ body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.88889;
-  color: $body-bg;
-  background-color: #F3FFCF; /* mellow yellow */
+  /*background-color: #F3FFCF;  mellow yellow */
+  background: url("images/galaxy2.jpg");
+  background-repeat: repeat;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
     
   .screen_wide_spacer { /* TECH NOTE: Is there a better solution */
-    /* transparent spacer, e.g., btw fixed header and other body elements */
     position: relative;
     width: 98%;
     height: 72px;
+
   }
+
+
 
   .item-wrap {
     /* position */
@@ -107,7 +110,6 @@ body {
     background: $wrap-bg;
     border-radius: $wrap-corner;
 
-    
     .title {
       /* position */
       width: 99%;
@@ -125,23 +127,26 @@ body {
 
     .graphic {
       /* position */
+      position: relative;
       float: left;
       width: 20%;
-      max-width: 100%;
-      height: auto;
+      height: 75%;
+      /* height: auto; */
       margin: $wrap-margin;
       padding: ($wrap-padding + 5px) $wrap-padding $wrap-padding ($wrap-padding + 15px);
 
       /* appearance */
       background: $graphic-bg;
       border-radius: inherit;
+      overflow: hidden;
 
       img {
-            width: 100%;
-            height: auto;
-          }
-    }
+        position: relative;
+        width: 100%;
+        height: 100%;
 
+      }
+    }
 
     .descr-and-links {
       /* position */
@@ -173,6 +178,8 @@ body {
         color: $descr-and-links-bg;
         text-shadow: 2px 2px #333333;
         box-shadow: 2px -2px 10px #111; 
+        
+        background: url("images/galaxy2.jpg");
       } 
 
       .description {
