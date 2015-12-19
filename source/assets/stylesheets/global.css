@@ -78,10 +78,7 @@ header nav ul .dropdown {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
-  opacity: 0;
-  /* so menus aren't visible at first */
-  transition: opacity 0.8s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 header nav ul .dropdown li:hover {
@@ -115,14 +112,14 @@ header .social-media a {
   text-decoration: none;
   text-align: center;
   color: white;
-  font-size: 14pt;
-  font-weight: bold;
-  transition: all 250ms ease-in-out;
+  font-size: 16pt;
+  transition: all 200ms ease-in-out;
 }
 
 header .social-media a:hover {
   transform: rotate(360deg);
   color: white;
+  font-weight: bold;
 }
 
 header .social-media.facebook {
@@ -137,18 +134,6 @@ header .social-media.google-plus {
   background: #d34836;
 }
 
-header #google-plus {
-  float: right;
-  margin: 5px;
-  background: #d34836;
-  text-align: center;
-  color: white;
-  font-style: bold;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
 footer {
   /* position */
   display: block;
@@ -157,7 +142,7 @@ footer {
   position: relative;
   /* TECH NOTE: Change this to absolute and ask why it moves up */
   width: 100%;
-  height: 150px;
+  height: 75px;
   clear: both;
   /* appearance */
   background-color: #2A363B;
@@ -176,6 +161,10 @@ footer {
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.footer_wrap h4 {
+  color: #FFFFFF;
 }
 
 *,
@@ -231,7 +220,7 @@ body .wrapper .red {
   margin: 0 auto;
   width: 940px;
   height: auto;
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
 }
 
 body .wrapper .orange {
@@ -239,17 +228,17 @@ body .wrapper .orange {
   padding: 5px;
   margin: 5px;
   float: left;
-  width: 60%;
+  width: 97%;
   height: auto;
   border-radius: 10px;
-  outline: 1px dotted orange;
-  box-shadow: 2px 2px 2px 2px #333333;
+  /* outline: 1px dotted orange; */
+  box-shadow: 1px 1px 1px 1px #EA804C;
   background: #000000;
-  opacity: 0.8;
 }
 
 body .wrapper .orange h1 {
-  width: 100%;
+  display: inline-block;
+  width: 50%;
   height: auto;
   margin: 5px;
   color: #A5B3AA;
@@ -257,6 +246,7 @@ body .wrapper .orange h1 {
 }
 
 body .wrapper .orange h2 {
+  display: inline-block;
   width: 100%;
   height: auto;
   margin: 5px;
@@ -265,25 +255,27 @@ body .wrapper .orange h2 {
 }
 
 body .wrapper .orange img {
-  float: left;
+  float: right;
   padding: 5px;
   margin: 5px;
-  width: 30%;
+  width: 25%;
   height: 100%;
 }
 
 body .wrapper .orange p {
   font-size: 12pt;
   color: #A5B3AA;
+  text-align: justify;
 }
 
 body .wrapper .orange a {
   overflow: hidden;
   display: inline-block;
-  border: 1px solid gray;
+  border: 1px solid #2790B0;
   text-align: center;
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 12px;
   padding: 5px;
   position: relative;
@@ -315,16 +307,101 @@ body .wrapper .orange a:hover {
   color: #F1DB42;
 }
 
+body .wrapper .green {
+  position: relative;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+  width: 55%;
+  height: auto;
+  border-radius: 10px;
+  /* outline: 1px dotted green; */
+  box-shadow: 1px 1px 1px 1px #A7BFA0;
+  background: #000000;
+  opacity: 0.8;
+}
+
+body .wrapper .green h1 {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  color: #A5B3AA;
+  font-size: 20pt;
+}
+
+body .wrapper .green h2 {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  color: #A5B3AA;
+  font-size: 12pt;
+}
+
+body .wrapper .green p {
+  text-align: justify;
+  font-size: 12pt;
+  margin: 5px;
+  padding-bottom: 10px;
+  color: #A5B3AA;
+}
+
+body .wrapper .green img {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  width: 30%;
+  height: 100%;
+}
+
+body .wrapper .green a {
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #2790B0;
+  text-align: center;
+  color: #2790B0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+body .wrapper .green a span {
+  z-index: 5;
+  position: relative;
+}
+
+body .wrapper .green a:after {
+  content: "";
+  display: block;
+  background: #333333;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 200ms ease-in-out;
+}
+
+body .wrapper .green a:hover:after {
+  top: 0%;
+}
+
+body .wrapper .green a:hover {
+  color: #F1DB42;
+}
+
 body .wrapper .yellow {
   position: relative;
   padding: 5px;
   margin: 5px;
   float: left;
-  width: 35%;
+  width: 40%;
   height: auto;
   border-radius: 10px;
-  outline: 1px dotted yellow;
-  box-shadow: 2px 2px 2px 2px #333333;
+  /* outline: 1px dotted yellow; */
+  box-shadow: 2px 2px 2px 2px #EDE7BE;
   background: #000000;
   opacity: 0.8;
 }
@@ -337,15 +414,77 @@ body .wrapper .yellow h1 {
   font-size: 20pt;
 }
 
+body .wrapper .yellow h2 {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  color: #A5B3AA;
+  font-size: 12pt;
+}
+
+body .wrapper .yellow h2:before {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  content: "";
+  width: 90%;
+  height: 1px;
+  box-shadow: 1px 1px 1px 1px #A5B3AA;
+}
+
 body .wrapper .yellow p {
+  margin: 5px;
+  padding-bottom: 10px;
+  display: inline-block;
+  width: 55%;
+  text-align: justify;
   font-size: 12pt;
   color: #A5B3AA;
 }
 
 body .wrapper .yellow img {
   float: right;
+  width: 35%;
+  height: 100%;
+}
+
+body .wrapper .yellow a {
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid #2790B0;
+  text-align: center;
+  color: #2790B0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px;
+  position: relative;
+  border-radius: 5px;
+}
+
+body .wrapper .yellow a span {
+  z-index: 5;
+  position: relative;
+}
+
+body .wrapper .yellow a:after {
+  content: "";
+  display: block;
+  background: #333333;
+  position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
   height: 100%;
+  transition: all 200ms ease-in-out;
+}
+
+body .wrapper .yellow a:hover:after {
+  top: 0%;
+}
+
+body .wrapper .yellow a:hover {
+  color: #F1DB42;
 }
 
 body .graphic {
