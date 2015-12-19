@@ -98,4 +98,54 @@ header {
 
   }
 
+  .social-media {
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background: gray;
+    font-size: 14pt;
+    font-style: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .social-media.facebook {
+    background: #3B5998;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .social-media.twitter {
+    background: #0084b4;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .social-media.google-plus {
+    background: #d34836;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  #google-plus {
+    float: right;
+    margin: 5px;
+    background: #d34836;
+    text-align: center;
+    color: white;
+    font-style: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
 }
