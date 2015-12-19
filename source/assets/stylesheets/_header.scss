@@ -66,8 +66,7 @@ header {
 
       li:hover {
         color: #FFFFFF; /* white */
-        outline-style: dotted;
-        outline-color: pink;
+        background-color: #000000;
       }
 
       .dropdown {
@@ -77,8 +76,10 @@ header {
         top: 60px;
         left: 0;
         width: 100%;
+        height: 100%;
+        background-color: #000000;
         opacity: 0; /* so menus aren't visible at first */
-        transition: opacity 0.4s ease-in-out; 
+        transition: opacity 0.8s ease-in-out; 
       }
 
       .dropdown li:hover {
@@ -103,38 +104,40 @@ header {
     margin: 10px;
     padding: 5px;
     text-align: center;
-    color: white;
-    background: gray;
-    font-size: 14pt;
-    font-style: bold;
     width: 40px;
     height: 40px;
     border-radius: 50%;
   }
 
-  .social-media.facebook {
-    background: #3B5998;
-    a {
-      text-decoration: none;
+  .social-media a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      transform: rotate(360deg);
       color: white;
     }
+
+  }
+
+  .social-media.facebook {
+    background: #3B5998;
   }
 
   .social-media.twitter {
     background: #0084b4;
-    a {
-      text-decoration: none;
-      color: white;
-    }
   }
 
   .social-media.google-plus {
     background: #d34836;
-    a {
-      text-decoration: none;
-      color: white;
-    }
   }
+  
+
 
   #google-plus {
     float: right;
