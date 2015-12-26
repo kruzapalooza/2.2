@@ -52,6 +52,8 @@ header {
         list-style-type: none; 
       
         li {
+          background-color: black;
+
           -webkit-transition: background-color 0.3s ease-in-out;
           -moz-transition: background-color 0.3s ease-in-out;
           -ms-transition: background-color 0.3s ease-in-out;

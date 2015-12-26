@@ -13,10 +13,10 @@ body {
   margin: auto; /* TECH NOTE: what does this do? */
   
   /* appearance */ 
-  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Comic Sans MS", cursive;
   font-size: 100%;
   line-height: 1.88889;
-  background: url("/assets/images/rainbow.jpg");
+  background: url("/assets/images/palm_background.jpg"); 
   background-repeat: repeat;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -57,7 +57,7 @@ body {
         padding: 5px;
         margin: 5px;
         float: left;
-        width: 100%;
+        width: 98%;
         max-width: 1450px;
         height: auto;
         border-radius: 10px;
@@ -74,7 +74,7 @@ body {
         padding: 5px;
         margin: 5px;
         float: left;
-        width: 90%;
+        width: 98%;
         height: auto;
         border-radius: 10px;
         /* outline: 1px dotted green; */
@@ -85,6 +85,7 @@ body {
     }    
 
     .green h1 {
+      text-align: center;
       width: 100%;
       height: auto;
       margin: 5px;
@@ -109,23 +110,46 @@ body {
       color: #A5B3AA;;
       }
 
+    /* query for wide screens */  
     @media (min-width: 780px) {
       .green img {
-        float: left;
         padding: 5px;
         margin: 5px;
         width: 45%;
         height: 100%;
       }
+        
+      /* container for two pics, one on top of other */ 
+      .green div {
+        width: 45%;
+        height: auto; 
+        float: right;
+
+        img {   
+          width: 85%;
+          height: 100%;         
+          }
+      }
+
     }
 
+    /* query for narrow screen, small devices */
     @media (max-width: 779px) {
       .green img {
-        float: left;
+        /* float: left; */
         padding: 5px;
         margin: 5px;
-        width: 95%;
+        width: 100%;
         height: 100%;
+      }
+
+      /* container for two pics, one on top of other*/ 
+      .green div { 
+        img {
+          float: left;
+          width: 48%;
+          height: 100%;         
+          }
       }
     }
 
@@ -142,211 +166,33 @@ body {
       position: relative;
       border-radius: 5px;
       
-        span {
-          z-index: 5;
-          position: relative;
-        }
-          
-        &:after {
-          content: "";
-          display: block;
-          background: #333333;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          transition: all 200ms ease-in-out;
-        }
-          
-        &:hover:after {
-            top: 0%;
-        }
-          
-        &:hover {
-            color: #F1DB42;
-        }  
-
-    }
-
-    @media (min-width: 780px) {
-      .yellow {
+      span {
+        z-index: 5;
         position: relative;
-        padding: 5px;
-        margin: 5px;
-        float: left;
-        width: 40%;
-        height: auto;
-        border-radius: 10px;
-        /* outline: 1px dotted yellow; */
-        box-shadow: 2px 2px 2px 2px #EDE7BE;
-        background: #000000;
-        opacity: 0.8;
       }
-    }
-
-    @media (max-width: 779px) {
-      .yellow {
-        position: relative;
-        padding: 5px;
-        margin: 5px;
-        float: left;
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        /* outline: 1px dotted yellow; */
-        box-shadow: 2px 2px 2px 2px #EDE7BE;
-        background: #000000;
-        opacity: 0.8;
-      }
-    }    
-    
-    .yellow h1 {
-      display: inline-block;
-      width: 100%;
-      height: auto;
-      margin: 5px;
-      color: #A5B3AA;
-      font-size: 20pt;
-
-      }
-
-      .yellow h2 {
-        display: inline-block;
-        width: 100%;
-        height: auto;
-        margin: 5px;
-        color: #A5B3AA;
-        font-size: 12pt;
-
-        &:before {
-          display: block;
-          margin-top: 20px;
-          margin-bottom: 20px;
-          content: "";
-          width: 90%;
-          height: 1px;
-          box-shadow: 1px 1px 1px 1px #A5B3AA;
-        }
-      }
-
-      @media (min-width: 800px) {
-        .yellow p {
-          margin: 5px;
-          padding-bottom: 10px;
-          display: inline-block;
-          width: 55%;
-          text-align: justify;
-          font-size: 12pt;
-          color: #A5B3AA;
-        }
-      }
-
-      @media (max-width: 799px) {
-        .yellow p {
-          margin: 5px;
-          padding-bottom: 10px;
-          display: inline-block;
-          width: 60%;
-          text-align: justify;
-          font-size: 12pt;
-          color: #A5B3AA;
-        }
-      }
-
-      @media (min-width: 800px) {
-        .yellow img {
-          float: right;
-          width: 35%;
-          height: 100%;
-        }
-      }
-
-      @media (max-width: 779px) {
-        .yellow img {
-          float: right;
-          width: 25%;
-          height: 100%;
-        }
-      }
-
-      .yellow a {
-        overflow: hidden;
-        display: inline-block;
-        border: 1px solid #2790B0;
-        text-align: center;
-        color: #2790B0;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 12px;
-        padding: 5px;
-        position: relative;
-        border-radius: 5px;
         
-        span {
-          z-index: 5;
-          position: relative;
-        }
-        
-        &:after {
-          content: "";
-          display: block;
-          background: #333333;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          transition: all 200ms ease-in-out;
-        }
-        
-        &:hover:after {
-          top: 0%;
-        }
-        
-        &:hover {
-          color: #F1DB42;
-        }
-        
-      }
-    
-
-  }
-
-  .graphic {
-    padding: 5px;
-    margin: 5px;
-    width: 20%;
-    height: 100%;
-
-    .one {
-      float: left;
-      overflow: hidden;
-      box-shadow: inherit;
-
-      img {
-        position: relative;
+      &:after {
+        content: "";
+        display: block;
+        background: #333333;
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
         height: 100%;
-        box-shadow: inherit;
+        transition: all 200ms ease-in-out;
       }
-    }  
+        
+      &:hover:after {
+          top: 0%;
+      }
+        
+      &:hover {
+          color: #F1DB42;
+      }  
 
-  }
+    } 
 
-  #owl-demo {
-    width: 100%;
-  }
-
-  #owl-demo .owl-item {
-    margin: 5px;
-    width: 100%;
-  }
-
-  #owl-demo .owl-item img {
-    display: block;
-    width: 100%;
-    height: auto;
   }
 
 }

@@ -9,7 +9,7 @@ footer {
   
   /* appearance */
   background-color: #000000;
-  box-shadow: 2px -2px 10px #111;
+  box-shadow: 2px 2px 2px 2px #111;
 }
 
 .footer_wrap {
@@ -19,19 +19,11 @@ footer {
   width: 100%;
   height: 100%;
 
-  /* appearance */
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-
   .signature {
     background-color: black;
 
     img {
       float: left;
-      padding: 5px;
-      margin: 5px;
       width: 200px;
       height: 100%;
     }
@@ -43,8 +35,6 @@ footer {
 
     img {
       float: right;
-      padding: 5px;
-      margin: 5px;
       width: 75px;
       height: 100%;
     }
