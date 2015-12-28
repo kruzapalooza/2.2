@@ -16,8 +16,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.88889;
-  background: url("/assets/images/galaxy.jpg");
-  background-repeat: repeat;
+  background: #7EC0EE;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
     
@@ -32,8 +31,6 @@ body {
     position: relative;
     padding: 5px;
     margin: 5px;
-    /* debug only */ /*  
-    box-shadow: 2px 2px 2px 2px #a6a6a6; */
 
     /* avoid the great collapse */
     &:after { 

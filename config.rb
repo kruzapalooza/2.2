@@ -1,5 +1,6 @@
 configure :development do
   activate :livereload
+  # activate :directory_indexes
 end
 
 # helpers do
