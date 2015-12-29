@@ -12,23 +12,34 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--- TERRIBLE SHITTY HACKED SOLUTION: would rather just include 
+    <!--- TERRIBLE HACKED SOLUTION: would rather just include 
     /_header.html.erb and /assets/stylesheets/_header.scss 
-    but having trouble including them -->
+    but having trouble including them 
     <link rel="stylesheet" href="/assets/stylesheets/header.css" />
     <link rel="import" href="/header.html" />
 
+    <object type="text/html" data="/header.html">
+    </object>
+    -->
 </head>
 
 <!--#include file="/header.html" --> 
 
-<object type="text/html" data="/header.html">
-</object>
+
 
 <!-- begin page wrapper and body -->
 <body> 
 
-    <div class="screen_wide_spacer"> </div>
+    <div class="screen_wide_spacer"> 
+  
+      <a href="/index.html" class="button">
+        <span>
+          Home Page
+        </span>
+      </a> 
+
+    </div>
+ 
 
         <div class="red">
             
@@ -44,7 +55,7 @@
                     by Marc S. Kruza
                   </h2>
 
-                  <img src="../images/plane.jpg"/> 
+                  <img src="/assets/images/plane.jpg"/> 
                   
                   <p>            
                     On the eve of Christmas Eve, with 200 miles left to drive, and no mechanics available, my car broke down just outside Jacksonville, FL. This annual road trip started where I lived in Charleston, SC, included a halfway-stopping point at my best friend Ryan's house in Jacksonville, FL, and ended at my parent's house in Clearwater, FL. The phrase "Go Greyhound" crossed my mind, but Ryan had a better idea: "Soar Cessna." Ryan had earned his pilot's license, and offered to fly me to Clearwater in a Cessna 172. Pep Boys could take their sweet time fixing my car. I was flying home instead, without rip-off plane fares or TSA pat-downs. This, I thought, was the best car breakdown ever.
@@ -59,7 +70,7 @@
                     Ryan let me fly almost an hour. &#8220Don't chase the instruments or the GPS reading. You'll overcorrect constantly,&#8221 he repeated many times. &#8220Is the whole flight going to roll like this with you overcorrecting? The passengers are getting sick.&#8221 "Chasing the instruments" means looking down at needles and readings more than straight ahead where you're actually going. It's a little less obnoxious and dangerous than texting while driving, but not much. For the sake of said imaginary passengers, I picked a lake on the horizon, flew toward it, and barely looked at the instruments. Countless lakes and forests all slowly rolled under the plane 4,500 feet below us. I flew more smoothly, and Ryan's impromptu flight coaching instantly became less sarcastic. 
                   </p>
 
-                  <img src="../images/controls.jpg"/>
+                  <img src="/assets/images/controls.jpg"/>
 
                   <p>
                     Ryan pointed out John Travolta's house near Ocala, in a neighborhood with a unique Home Owner's Association rule: Every resident had to own a plane. Nearly a mile up, things looked much smaller and the plane seemed to crawl like a tortoise. But our ground speed was 80 miles per hour. Far to the south, I saw buildings I thought might be a small town on a small lake, but quickly realized it was Downtown Tampa's skyline. 
@@ -71,7 +82,7 @@
                     As we touched town, I realized how small the airpark was. My parents greeted us in the airpark's double-wide trailer terminal. I had always wanted to take off and land here as a kid, and now, at 34 years old, my childhood wish came true two days before Christmas. 
                   </p>
                   
-                  <img src="../images/plane_and_mountain.jpg"/>
+                  <img src="/assets/images/plane_and_mountain.jpg"/>
 
               </div> 
    

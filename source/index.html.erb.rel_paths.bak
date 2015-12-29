@@ -7,23 +7,23 @@
         Novels and Blogs: Marc S. Kruza 
     </title> 
     <!-- <link rel="stylesheet" href="styles.scss" /> -->
-    <script src="/assets/javascripts/jquery-1.11.3.min.js">
+    <script src="assets/javascripts/jquery-1.11.3.min.js">
     </script>
 
-    <script src="/assets/javascripts/test_script.js">
+    <script src="assets/javascripts/test_script.js">
     </script>
 
     <!-- Basic stylesheet -->
-    <link rel="stylesheet" href="/assets/stylesheets/owl.carousel.css">
+    <link rel="stylesheet" href="assets/stylesheets/owl.carousel.css">
      
      <!-- Default Theme -->
-    <link rel="stylesheet" href="/assets/stylesheets/owl.theme.css">
+    <link rel="stylesheet" href="assets/stylesheets/owl.theme.css">
      
     <!-- Include js plugin -->
-    <script src="/assets/javascripts/owl.carousel.js">
+    <script src="assets/javascripts/owl.carousel.js">
     </script>
 
-    <script src="/assets/javascripts/carousel.js">
+    <script src="assets/javascripts/carousel.js">
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,7 +43,7 @@
                   <h1>  
                     Welcome to My Website
                   </h1> 
-                  <img src="/assets/images/me.jpg" /> 
+                  <img src="assets/images/me.jpg" /> 
                   <p>
                     Having graduated from Florida State with degrees in Computer
                     Science and Music Composition, my interests range from 
@@ -68,7 +68,7 @@
                   <h2>
                     A Young Adult Novel
                   </h2>
-                  <img src="/assets/images/novel_cover_lowrez.jpg" /> 
+                  <img src="assets/images/novel_cover_lowrez.jpg" /> 
                   
                   <p>
                     What's more dangerous: asteroids and space aliens, or swirlies and high school punks? Join Matt, an up-and-coming graphic artist, as he navigates the bizarre universe of his freshman year while relating in his sketchbook just how much high school feels like a bizarre space prison in which there are no rules, no order, and no friends.
@@ -106,7 +106,7 @@
                   Staying By His Side, an essay I wrote recounting a fun yet unexpectedly scary day with my grandpa at Busch Gardens, appeared in Chicken Soup For The Soul Just For Preteens, an anthology of encouraging stories about that tumultuous time of youth.
                 </p>
                 
-                <img src="/assets/images/preteens.jpg" /> 
+                <img src="assets/images/preteens.jpg" /> 
                 
                 <a href="http://www.amazon.com/Chicken-Soup-Soul-Preteens-Inspiration/dp/1935096737" class="button" />
                   <span>
@@ -125,9 +125,9 @@
                   "all of the above?"
                 </p>
 
-                <img src="/assets/images/plane.jpg" />
+                <img src="assets/images/plane.jpg" />
 
-                <a href="/assets/blog/soar_cessna.html" class="button" />
+                <a href="assets/blog/soar_cessna.html" class="button" />
                   <span>
                     Read blog
                   </span>
@@ -141,9 +141,9 @@
                   days of backpacking through the Garden of Eden?
                 </p>
 
-                <img src="/assets/images/rainbow.jpg" />
+                <img src="assets/images/rainbow.jpg" />
 
-                <a href="/assets/blog/kauai.html" class="button" />
+                <a href="assets/blog/kauai.html" class="button" />
                   <span>
                     Read blog
                   </span>
@@ -157,16 +157,16 @@
           <div class="graphic-right">
               <div id="owl-demo">         
                   <div class="owl-item">        
-                      <img src="/assets/images/f16_p01_drownrace.jpg">  
+                      <img src="assets/images/f16_p01_drownrace.jpg">  
                   </div>   
                   <div class="owl-item">                        
-                      <img src="/assets/images/p11_f1.jpg">  
+                      <img src="assets/images/p11_f1.jpg">  
                   </div>
                   <div class="owl-item">          
-                      <img src="/assets/images/p13_f2_fore.jpg">      
+                      <img src="assets/images/p13_f2_fore.jpg">      
                   </div>
                   <div class="owl-item">      
-                      <img src="/assets/images/p19_f6_surfing.jpg">     
+                      <img src="assets/images/p19_f6_surfing.jpg">     
                   </div>    
 
               </div>     
