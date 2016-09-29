@@ -1,0 +1,526 @@
+/* line 1, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  z-index: 1000000;
+  background-color: #000000;
+  opacity: 1; }
+  /* line 12, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+  header .signature {
+    width: 250px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    vertical-align: top;
+    font-family: "Calligraffitti";
+    font-size: 25px;
+    font-style: italic;
+    font-variant: normal; }
+  @media (min-width: 780px) {
+    /* line 1, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+    header {
+      /* end nav */ }
+      /* line 26, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+      header nav {
+        float: left;
+        background-color: black; }
+        /* line 30, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+        header nav #main-nav > li {
+          float: left;
+          position: relative;
+          width: 120px;
+          height: 60px;
+          text-align: center;
+          vertical-align: bottom; }
+        /* line 39, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+        header nav li:before {
+          position: absolute;
+          left: 0px;
+          background-color: #4A4031;
+          content: "";
+          width: 1px;
+          height: 100%; }
+        /* line 48, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+        header nav ul {
+          height: 60px;
+          margin: 0;
+          padding: 0;
+          list-style-type: none; }
+          /* line 54, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+          header nav ul li {
+            background-color: #000000;
+            -webkit-transition: background-color 0.3s ease-in-out;
+            -moz-transition: background-color 0.3s ease-in-out;
+            -ms-transition: background-color 0.3s ease-in-out;
+            -o-transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out; }
+          /* line 63, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+          header nav ul li:hover {
+            color: #FFFFFF;
+            /* white */
+            background-color: #000000; }
+          /* line 68, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+          header nav ul .dropdown {
+            /* display: none; */
+            position: absolute;
+            margin-top: -9999px;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 1s ease-in-out; }
+          /* line 79, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+          header nav ul .dropdown li:hover {
+            background-color: #000047; }
+          /* line 83, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+          header nav ul li a {
+            display: block;
+            padding: 8px 8px 8px 8px; }
+        /* line 90, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+        header nav li.has-dropdown:hover > ul.dropdown {
+          margin-top: 0;
+          /* required for drop-down to initiate */
+          opacity: 1;
+          /* make menu visible on mouse hover   */ } }
+  @media (max-width: 780px) {
+    /* line 100, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+    header nav {
+      display: none; } }
+  /* line 105, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+  header .social-media {
+    float: right;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; }
+  /* line 115, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+  header .social-media a {
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 12pt;
+    transition: all 200ms ease-in-out; }
+    /* line 123, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+    header .social-media a:hover {
+      transform: rotate(360deg);
+      color: white;
+      font-weight: bold; }
+  /* line 131, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+  header .social-media.facebook {
+    background: #3B5998; }
+  /* line 135, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+  header .social-media.twitter {
+    background: #0084b4; }
+  /* line 139, /Users/mkruza/2.2/source/assets/stylesheets/_header.scss */
+  header .social-media.google-plus {
+    background: #d34836; }
+
+/* line 1, /Users/mkruza/2.2/source/assets/stylesheets/_footer.scss */
+footer {
+  /* position */
+  display: block;
+  /* TECH NOTE: inline and block left this in middle */
+  /* of page, but inline-block moved this to bottom of page */
+  position: relative;
+  /* TECH NOTE: Change this to absolute and ask why it moves up */
+  width: 100%;
+  height: 60px;
+  clear: both;
+  /* appearance */
+  background-color: #000000;
+  box-shadow: 2px 2px 2px 2px #111; }
+
+/* line 15, /Users/mkruza/2.2/source/assets/stylesheets/_footer.scss */
+.footer_wrap {
+  /* position */
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%; }
+  /* line 22, /Users/mkruza/2.2/source/assets/stylesheets/_footer.scss */
+  .footer_wrap .signature {
+    background-color: black; }
+    /* line 25, /Users/mkruza/2.2/source/assets/stylesheets/_footer.scss */
+    .footer_wrap .signature a img {
+      float: left;
+      width: 200px;
+      height: 100%; }
+  /* line 32, /Users/mkruza/2.2/source/assets/stylesheets/_footer.scss */
+  .footer_wrap .logo {
+    background-color: black; }
+    /* line 36, /Users/mkruza/2.2/source/assets/stylesheets/_footer.scss */
+    .footer_wrap .logo a img {
+      float: right;
+      width: 75px;
+      height: 100%; }
+
+/* line 4, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* line 10, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+body {
+  /* position */
+  position: relative;
+  /* TECH NOTE: change to absolute; explain behavior */
+  margin: auto;
+  /* TECH NOTE: what does this do? */
+  /* appearance */
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.88889;
+  background: url("/assets/images/galaxy.jpg");
+  background-repeat: repeat;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased; }
+  /* line 24, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+  body .screen_wide_spacer {
+    position: relative;
+    width: 98%;
+    height: 72px; }
+  /* line 30, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+  body .wrapper {
+    display: block;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    /* debug only */
+                 /*  
+box-shadow: 2px 2px 2px 2px #a6a6a6; */
+    /* avoid the great collapse */ }
+    /* line 39, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper:after {
+      content: "";
+      display: block;
+      height: 0;
+      clear: both; }
+    /* line 46, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .red {
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      /* outline: 1px dotted red; */ }
+    /* line 54, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .orange {
+      position: relative;
+      padding: 5px;
+      margin: 5px;
+      float: left;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      /* outline: 1px dotted orange; */
+      box-shadow: 1px 1px 1px 1px #EA804C;
+      background: #000000; }
+      /* line 66, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .orange h1 {
+        display: inline-block;
+        width: 50%;
+        height: auto;
+        margin: 5px;
+        color: #FFA500;
+        font-size: 20pt; }
+      /* line 75, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .orange h2 {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin: 5px;
+        color: #A5B3AA;
+        font-size: 16pt; }
+      /* line 84, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .orange img {
+        float: right;
+        padding: 5px;
+        margin: 5px;
+        width: 25%;
+        max-width: 250px;
+        height: 100%; }
+      /* line 93, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .orange p {
+        font-size: 12pt;
+        color: #A5B3AA;
+        text-align: justify; }
+      /* line 99, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .orange a {
+        overflow: hidden;
+        display: inline-block;
+        border: 1px solid #2790B0;
+        text-align: center;
+        color: #2790B0;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 5px;
+        position: relative;
+        border-radius: 5px; }
+        /* line 112, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+        body .wrapper .orange a span {
+          z-index: 5;
+          position: relative; }
+        /* line 117, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+        body .wrapper .orange a:after {
+          content: "";
+          display: block;
+          background: #333333;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: all 250ms ease-in-out; }
+        /* line 129, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+        body .wrapper .orange a:hover:after {
+          top: 0%; }
+        /* line 133, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+        body .wrapper .orange a:hover {
+          color: #F1DB42; }
+    @media (min-width: 780px) {
+      /* line 142, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .green {
+        position: relative;
+        padding: 5px;
+        margin: 5px;
+        float: left;
+        width: 45%;
+        height: auto;
+        border-radius: 10px;
+        /* outline: 1px dotted green; */
+        box-shadow: 1px 1px 1px 1px #A7BFA0;
+        background: #000000;
+        opacity: 0.8; } }
+    @media (max-width: 779px) {
+      /* line 158, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .green {
+        position: relative;
+        padding: 5px;
+        margin: 5px;
+        float: left;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        /* outline: 1px dotted green; */
+        box-shadow: 1px 1px 1px 1px #A7BFA0;
+        background: #000000;
+        opacity: 0.8; } }
+    /* line 173, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .green h1 {
+      width: 100%;
+      height: auto;
+      margin: 5px;
+      color: #32CD32;
+      font-size: 20pt; }
+    /* line 181, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .green h2 {
+      width: 100%;
+      height: auto;
+      margin: 5px;
+      color: #32CD32;
+      font-size: 12pt; }
+    /* line 189, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .green p {
+      text-align: justify;
+      font-size: 12pt;
+      margin: 5px;
+      padding-bottom: 10px;
+      color: #A5B3AA; }
+    /* line 197, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .green img {
+      float: left;
+      padding: 5px;
+      margin: 15px;
+      width: 40%;
+      height: 100%;
+      box-shadow: 2px 2px 2px 2px #333333; }
+    /* line 206, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .green a {
+      overflow: hidden;
+      display: inline-block;
+      border: 1px solid #2790B0;
+      text-align: center;
+      color: #2790B0;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 5px;
+      position: relative;
+      border-radius: 5px; }
+      /* line 219, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .green a span {
+        z-index: 5;
+        position: relative; }
+      /* line 224, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .green a:after {
+        content: "";
+        display: block;
+        background: #333333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 200ms ease-in-out; }
+      /* line 236, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .green a:hover:after {
+        top: 0%; }
+      /* line 240, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .green a:hover {
+        color: #F1DB42; }
+    @media (min-width: 780px) {
+      /* line 247, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow {
+        position: relative;
+        padding: 5px;
+        margin: 5px;
+        float: left;
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        /* outline: 1px dotted yellow; */
+        box-shadow: 2px 2px 2px 2px #EDE7BE;
+        background: #000000;
+        opacity: 0.8; } }
+    @media (max-width: 779px) {
+      /* line 263, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow {
+        position: relative;
+        padding: 5px;
+        margin: 5px;
+        float: left;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        /* outline: 1px dotted yellow; */
+        box-shadow: 2px 2px 2px 2px #EDE7BE;
+        background: #000000;
+        opacity: 0.8; } }
+    /* line 278, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .yellow h1 {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin: 5px;
+      color: #F1DB42;
+      font-size: 20pt; }
+    /* line 287, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .yellow h2 {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      margin: 5px;
+      color: #A5B3AA;
+      font-size: 12pt; }
+      /* line 295, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow h2:before {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        content: "";
+        width: 90%;
+        height: 1px;
+        box-shadow: 1px 1px 1px 1px #A5B3AA; }
+    @media (min-width: 780px) {
+      /* line 307, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow p {
+        margin: 5px;
+        padding-bottom: 10px;
+        display: inline-block;
+        width: 55%;
+        text-align: justify;
+        font-size: 12pt;
+        color: #A5B3AA; } }
+    @media (max-width: 779px) {
+      /* line 319, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow p {
+        margin: 5px;
+        padding-bottom: 10px;
+        display: inline-block;
+        width: 60%;
+        text-align: justify;
+        font-size: 12pt;
+        color: #A5B3AA; } }
+    @media (min-width: 780px) {
+      /* line 331, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow img {
+        float: right;
+        width: 35%;
+        height: 100%;
+        box-shadow: 1px 1px 1px 1px #333333; } }
+    @media (max-width: 779px) {
+      /* line 340, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow img {
+        float: right;
+        width: 25%;
+        height: 100%;
+        box-shadow: 1px 1px 1px 1px #333333; } }
+    /* line 348, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .wrapper .yellow a {
+      overflow: hidden;
+      display: inline-block;
+      border: 1px solid #2790B0;
+      text-align: center;
+      color: #2790B0;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 5px;
+      position: relative;
+      border-radius: 5px; }
+      /* line 361, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow a span {
+        z-index: 5;
+        position: relative; }
+      /* line 366, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow a:after {
+        content: "";
+        display: block;
+        background: #333333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 200ms ease-in-out; }
+      /* line 378, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow a:hover:after {
+        top: 0%; }
+      /* line 382, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .wrapper .yellow a:hover {
+        color: #F1DB42; }
+  /* line 391, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+  body .graphic {
+    padding: 5px;
+    margin: 5px;
+    width: 20%;
+    height: 100%; }
+    /* line 397, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+    body .graphic .one {
+      float: left;
+      overflow: hidden;
+      box-shadow: inherit; }
+      /* line 402, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+      body .graphic .one img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        box-shadow: inherit; }
+  /* line 412, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+  body #owl-demo {
+    width: 100%; }
+  /* line 416, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+  body #owl-demo .owl-item {
+    margin: 5px;
+    width: 100%; }
+  /* line 421, /Users/mkruza/2.2/source/assets/stylesheets/global.scss */
+  body #owl-demo .owl-item img {
+    display: block;
+    width: 100%;
+    height: auto; }
