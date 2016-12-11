@@ -11,3 +11,27 @@
 	height: 100px;
 	padding: 1em;
 }
+
+.green-outline {
+	outline-color: green;
+	outline-style: dotted;
+	height: 100px;
+	padding: 1em;
+}
+
+#container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+#navi,
+#infoi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#infoi {
+  z-index: 10;
+}
