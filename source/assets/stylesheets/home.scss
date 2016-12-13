@@ -19,19 +19,48 @@
 	padding: 1em;
 }
 
-#container {
-  width: 100px;
+.yellow-outline {
+  outline-color: yellow;
+  outline-style: dotted;
   height: 100px;
+  padding: 1em;
+}
+
+#box-1 {
+  height: 60em;
+  padding: 2em;
   position: relative;
+  z-index: 9;
 }
-#navi,
-#infoi {
-  width: 100%;
-  height: 100%;
+#box-2 {
+  max-width: 80%;
+  height: 40em;
   position: absolute;
-  top: 0;
-  left: 0;
-}
-#infoi {
+  top: 0em;
+  left: 0em;
   z-index: 10;
 }
+#box-3 {
+  max-width: 80%;
+  height: 40em;
+  position: absolute;
+  top: 10em;
+  left: 10em;
+  z-index: 15;
+}
+
+.separator {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  content: "";
+  width: 90%;
+  height: 1px;
+  box-shadow: 1px 1px 1px 1px #A5B3AA;
+}
+
+.text-1 {
+  color: white;
+}
+
+
