@@ -1,52 +1,49 @@
-.red-outline {
-	outline-color: red;
-	outline-style: dotted;
-	height: 100px;
-	padding: 1em;
+body {
+  background-color: blue;
 }
 
-.blue-outline {
-	outline-color: blue;
-	outline-style: dotted;
-	height: 100px;
-	padding: 1em;
-}
 
-.green-outline {
-	outline-color: green;
-	outline-style: dotted;
-	height: 100px;
-	padding: 1em;
-}
 
-.yellow-outline {
-  outline-color: yellow;
-  outline-style: dotted;
-  height: 100px;
-  padding: 1em;
-}
-
-#box-1 {
+#box-top {
+  max-width: 80%;
+  height: auto;
   height: 60em;
   padding: 2em;
   position: relative;
-  z-index: 9;
+  z-index: 90;
 }
-#box-2 {
+
+#name-and-nav {
   max-width: 80%;
   height: 40em;
   position: absolute;
   top: 0em;
   left: 0em;
-  z-index: 10;
+  z-index: 100;
 }
-#box-3 {
+
+#headshot-and-highlights {
   max-width: 80%;
   height: 40em;
   position: absolute;
   top: 10em;
   left: 10em;
-  z-index: 15;
+  z-index: 150;
+}
+
+#headshot {
+  max-height: 100%;
+}
+
+.small-book-grid {
+  max-height: 100%;
+  margin: auto 0;
+  max-width: 75%;
+
+  .small-book {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .separator {
@@ -63,4 +60,30 @@
   color: white;
 }
 
+
+
+
+/* troubleshooting */
+
+.outline {
+  outline-style: dotted;
+  height: auto;
+  padding: 1em;
+}
+
+.red {
+  outline-color: red;
+}
+
+.blue {
+  outline-color: blue;
+}
+
+.green {
+  outline-color: green;
+}
+
+.yellow {
+  outline-color: yellow;
+}
 
