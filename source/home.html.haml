@@ -1,27 +1,43 @@
+%script{:src => "/assets/javascripts/global.js"}
+%head
+  %link{:href => "https://fonts.googleapis.com/css?family=Orbitron", :rel => "stylesheet", :type => "text/css"}
+
 %div.screen_wide_spacer
 
 %div.container-fluid
   
-  %div#box-top.row.red.outline
-    
+  %div#box-top.row
+
     %div#name-and-nav.blue.outline
-      %img.img-responsive{ :src => "/assets/images/marc_s_kruza_print.jpg", width: "25%" }
-      %div.separator
-   
+      %div#name.pull-left
+        Marc S. Kruza
+      %ul.nav.nav-tabs.pull-right
+        %li{:role => "presentation"}
+          %a{:href => "#"} Novels
+        %li{:role => "presentation"}
+          %a{:href => "#"} Articles
+        %li{:role => "presentation"}
+          %a{:href => "#"} News
+        %li{:role => "presentation"}
+          %a{:href => "#"} News
+    
     %div#headshot-and-highlights.row.blue.outline
       
       %div#headshot.col-md-4.yellow.outline
-        %img.img-responsive{ :src => "/assets/images/me.jpg"}
+        %img.img-responsive{ src: "/assets/images/me.jpg"}
       
-      %div.col-md-4.small-book-grid.yellow.outline
+      %div.col-md-4#small-book-grid.yellow.outline
         %div.col-lg-6.small-book.green.outline
-          %img.img-responsive{ :src => "/assets/images/preteens.jpg"}
+          %img.img-responsive{ src: "/assets/images/preteens.jpg"}
         %div.col-lg-6.small-book.green.outline
-          %img.img-responsive{ :src => "/assets/images/novel_cover_smaller.jpg"}
+          %img.img-responsive{ src: "/assets/images/novel_cover_smaller.jpg"}
       
       %div.col-md-4.yellow.outline.pull-right
         %p.text-1 
           Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
-          Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
-          Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
-          Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
+
+%div.container-fluid
+
+  %div#box-middle.row
+    %div.novels
+    %div.articles
