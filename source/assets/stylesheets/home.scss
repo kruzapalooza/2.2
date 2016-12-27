@@ -6,7 +6,8 @@ body {
   max-width: 80%;
   height: auto;
   height: 60em;
-  padding: 2em;
+  margin-left: 2em;
+  padding: 1em;
   position: relative;
   z-index: 90;
 }
@@ -58,10 +59,11 @@ body {
 }
 
 #box-middle {
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
   height: 60em;
   padding: 2em;
+  margin: 2em;
   position: relative;
   z-index: 90;
 }
@@ -70,7 +72,7 @@ body {
   background-color: #674F23;
   border: 1px solid #3D1C00;
   border-radius: 0.5em;
-  width: 80%;
+  width: 30%;
   height: 40em;
   position: absolute;
   top: 0em;
@@ -82,12 +84,24 @@ body {
   background-color: #674F33;
   border: 1px solid #3D1C00;
   border-radius: 0.5em;
-  width: 80%;
+  width: 30%;
   height: 40em;
   position: absolute;
-  top: 10em;
-  left: 10em;
+  top: 2.5em;
+  left: 25%;
   z-index: 150;
+}
+
+#blog {
+  background-color: #674F43;
+  border: 1px solid #3D1C00;
+  border-radius: 0.5em;
+  width: 30%;
+  height: 40em;
+  position: absolute;
+  top: 5em;
+  left: 50%;
+  z-index: 200;
 }
 
 .separator {
