@@ -1,47 +1,61 @@
-%script{:src => "/assets/javascripts/global.js"}
+%script{ src: "/assets/javascripts/global.js"}
 %head
-  %link{:href => "https://fonts.googleapis.com/css?family=Orbitron", :rel => "stylesheet", :type => "text/css"}
+  %link{href: "https://fonts.googleapis.com/css?family=Orbitron", rel: "stylesheet", type: "text/css"}
 
 %div.screen_wide_spacer
 
-%div.container-fluid
-  
+%div.container-fluid.red.outline
   %div#box-top.row
-
     %div#name-and-nav.blue.outline
       %div#name.pull-left
         Marc S. Kruza
       %ul.nav.nav-tabs.pull-right
-        %li{:role => "presentation"}
-          %a{:href => "#"} Novels
-        %li{:role => "presentation"}
-          %a{:href => "#"} Articles
-        %li{:role => "presentation"}
-          %a{:href => "#"} News
-        %li{:role => "presentation"}
-          %a{:href => "#"} News
+        %li{ role: "presentation"}
+          %a{ href: "#"} Novels
+        %li{ role: "presentation"}
+          %a{ href: "#"} Articles
+        %li{ role: "presentation"}
+          %a{ href: "#"} News
+        %li{ role: "presentation"}
+          %a{ href: "#"} News
     
     %div#headshot-and-highlights.row.blue.outline
-      
-      %div#headshot.col-md-4.yellow.outline
+      %div#headshot.col-md-4.col-sm-6.yellow.outline
         %img.img-responsive{ src: "/assets/images/me.jpg"}
       
-      %div.col-md-4#small-book-grid.yellow.outline
+      %div.col-md-4.col-sm-6#small-book-grid.yellow.outline
         %div.col-lg-6.small-book.green.outline
           %img.img-responsive{ src: "/assets/images/preteens.jpg"}
         %div.col-lg-6.small-book.green.outline
           %img.img-responsive{ src: "/assets/images/novel_cover_smaller.jpg"}
       
-      %div.col-md-4.yellow.outline.pull-right
+      %div.col-md-4.col-sm-6.yellow.outline.pull-right
         %p.text-1 
           Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
 
-%div.container-fluid
+%div.container-fluid.red.outline
 
-  %div#box-middle.row
+  %div#box-middle-medium.row
     %div#novels
-      %h2 Novels
+      %h4 Novels
+      %section.my-list What's more dangerous: asteroids and space aliens, or swirlies and high school punks? Join Matt, an up-and-coming graphic artist, as he navigates his own coming-of-age freshman year universe while relating in his sketchbook just how much high school feels like a dystopian space prison in which there are no rules, no order, and no friends.
     %div#articles
-      %h2 Articles
+      %h4 Articles
     %div#blog
-      %h2 Blog
+      %h4 Blog
+      %h5 Backpacking in Paradise
+      %section.my-list There's more to Hawaii than luaus and waves... how about four days of backpacking through the Garden of Eden?
+      %h5 Staying By His Side
+      %section.my-list Staying By His Side, an essay I wrote recounting a fun yet unexpectedly scary day with my grandpa at Busch Gardens, appeared in Chicken Soup For The Soul Just For Preteens, an anthology of encouraging stories about that tumultuous time of youth.
+      %h5 Soar Cessna
+      %section.my-list When your car breaks down on the drive home for Christmas, do you: call your pilot friend and have him fly you home, learn that "FORD" stands for "found on roadside dead," call a AAA towtruck, or "all of the above?"
+
+  %div#box-middle-small.row
+    %ul.nav.nav-tabs.pull-left
+      %li{role: "presentation"}
+        %a{href: "#"} Novels
+      %li{role: "presentation"}
+        %a{href: "#"} Articles
+      %li{role: "presentation"}
+        %a{href: "#"} Blog
+ 
