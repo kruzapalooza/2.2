@@ -3,7 +3,7 @@ body {
 }
 
 #box-top {
-  max-width: 90%;
+  max-width: 100%;
   min-height: 40em;
   max-height: auto;
   margin-left: 0.5em;
@@ -43,6 +43,7 @@ body {
 }
 
 #headshot {
+  margin: auto 0;
   max-height: 100%;
   padding: 1em;
 }
@@ -55,11 +56,12 @@ body {
   .small-book {
     padding: 1em;
     max-width: 50%;
+    max-height: 100%;
   }
 }
 
 #box-middle-medium {
-  max-width: 90%;
+  max-width: 100%;
   min-height: 60em;
   max-height: auto;
   padding: 2em;
@@ -141,7 +143,6 @@ body {
 
 
 /* troubleshooting */
-/*
 
 .outline {
   outline-style: dotted;
@@ -165,4 +166,3 @@ body {
   outline-color: yellow;
 }
 
-*/
