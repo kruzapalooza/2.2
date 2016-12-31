@@ -8,6 +8,7 @@ body {
   max-height: auto;
   margin-left: 0.5em;
   padding: 1em;
+  padding-bottom: 5em;
   position: relative;
   z-index: 90;
 }
@@ -36,7 +37,9 @@ body {
   border-radius: 0.5em;
   max-width: 80%;
   min-height: 10em;
-  position: absolute;
+  max-height: 90%;
+  /* position: absolute; */
+  position: relative;
   top: 5em;
   left: 5em;
   z-index: 150;
