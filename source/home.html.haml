@@ -1,7 +1,7 @@
 %script{ src: "/assets/javascripts/global.js"}
 %head
-  %link{href: "https://fonts.googleapis.com/css?family=Orbitron", rel: "stylesheet", type: "text/css"}
-  %meta{content: "width=device-width, initial-scale=1", name: "viewport"}
+  %link{ href: "https://fonts.googleapis.com/css?family=Orbitron", rel: "stylesheet", type: "text/css"}
+  %meta{ content: "width=device-width, initial-scale=1", name: "viewport"}
 
 %body
 
@@ -19,9 +19,25 @@
             %a{ href: "#"} Articles
           %li{ role: "presentation"}
             %a{ href: "#"} News
-          %li{ role: "presentation"}
-            %a{ href: "#"} News
       
+      %ul#social-media-bar.green.outline 
+        %li
+        %li
+          %a{ href: "https://twitter.com/mkruza" }
+            %img.social-media-widget.img-responsive{ src: "/assets/images/icon_twitter.jpg" }
+        %li
+          %a{ href: "https://www.facebook.com/marckruza/?skip_nax_wizard=true" }
+            %img.social-media-widget.img-responsive{ src: "/assets/images/icon_facebook.png" }
+        %li
+          %a{ href: "https://plus.google.com/b/107140843890666097689/107140843890666097689/about?gmbpt=true&pageId=107140843890666097689" }
+            %img.social-media-widget.img-responsive{ src: "/assets/images/icon_google_plus.jpg" }
+        %li
+          %a{ href: "https://www.instagram.com/marckruza/?hl=en" }
+            %img.social-media-widget.img-responsive{ src: "/assets/images/icon_instagram.jpg" }
+        %li
+          %a{ href: "https://www.linkedin.com/in/marc-kruza-1765128" }
+            %img.social-media-widget.img-responsive{ src: "/assets/images/icon_linked_in.png" }
+
       %div#headshot-and-highlights.row.blue.outline
         %div#headshot.col-md-4.col-sm-6.col-xs-12.yellow.outline
           %img.img-responsive{ src: "/assets/images/me.jpg"}
@@ -53,12 +69,5 @@
         %h5 Soar Cessna
         %section.my-list When your car breaks down on the drive home for Christmas, do you: call your pilot friend and have him fly you home, learn that "FORD" stands for "found on roadside dead," call a AAA towtruck, or "all of the above?"
 
-    %div#box-middle-small.row
-      %ul.nav.nav-tabs.pull-left
-        %li{role: "presentation"}
-          %a{href: "#"} Novels
-        %li{role: "presentation"}
-          %a{href: "#"} Articles
-        %li{role: "presentation"}
-          %a{href: "#"} Blog
+
    

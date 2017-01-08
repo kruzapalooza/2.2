@@ -17,7 +17,7 @@ body {
   background-color: #674F23;
   border: 1px solid #3D1C00;
   border-radius: 0.5em;
-  width: 80%;
+  width: 90%;
   height: 30em;
   position: absolute;
   top: 0em;
@@ -31,11 +31,31 @@ body {
   color: yellow;
 }
 
+#social-media-bar {
+  position: absolute;
+  top: 4.5em;
+  left: 0;
+  width: 5em;
+  padding: 1em;
+  height: auto;
+  list-style-type: none;
+  z-index: 110;
+}
+
+.social-media-widget {
+  position: relative;
+  width: 100%;
+  margin-top: 1em;
+  border-radius: 0.75em;
+  height: auto;
+
+}
+
 #headshot-and-highlights {
   background-color: #674F33;
   border: 1px solid #3D1C00;
   border-radius: 0.5em;
-  max-width: 80%;
+  max-width: 90%;
   min-height: 10em;
   max-height: 90%;
   /* position: absolute; */
@@ -63,11 +83,11 @@ body {
   }
 }
 
-/* smallest viewport */
+/* smaller viewport */
 .tall-rectangle {
   position: relative;
   max-width: 100%;
-  min-height: 60em;
+  min-height: 30em;
   padding: 1em;
   margin: 1em;
   background-color: #674F23;
@@ -91,6 +111,7 @@ body {
   }
 }
 
+/* smaller viewport, default settings */
 #box-middle-medium {
   position: relative;
   max-width: 100%;
@@ -98,33 +119,38 @@ body {
   max-height: auto;
   padding: 2em;
   margin: 0.5em;
-  border: 1px solid #3D1C00;
   border-radius: 0.5em;
 }
 
+/* larger viewports */
 @media (min-width: 768px) {
   #novels {
     background-color: #674F23;
     top: 0em;
     left: 0em;
+    width: 33%;
     z-index: 100;
   }
 }
 
+/* larger viewports */
 @media (min-width: 768px) {
   #articles {
     background-color: #674F33;
     top: 2.5em;
-    left: 25%;
+    left: 30%;
+    width: 33%;
     z-index: 150;
   }  
 }
 
+/* larger viewports */
 @media (min-width: 768px) {
   #blog {
     background-color: #674F43;
     top: 5em;
-    left: 50%;
+    left: 60%;
+    width: 33%;
     z-index: 200;
   }
 }
@@ -136,16 +162,6 @@ body {
   padding-right: 25%; 
 }
 
-.separator {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  content: "";
-  width: 90%;
-  height: 1px;
-  box-shadow: 1px 1px 1px 1px #A5B3AA;
-}
-
 .text-1 {
   color: white;
 }
@@ -155,13 +171,11 @@ body {
 }
 
 
-
-
 /* troubleshooting */
-
+/*
 .outline {
-  outline-style: dotted;
-  height: auto;
+  outline-style: dotted; 
+  height: auto; 
   padding: 1em;
 }
 
@@ -180,4 +194,4 @@ body {
 .yellow {
   outline-color: yellow;
 }
-
+*/
