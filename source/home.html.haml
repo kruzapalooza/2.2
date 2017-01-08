@@ -7,7 +7,7 @@
 
   %div.screen_wide_spacer
 
-  %div.container.box-top.red.outline
+  %div.container-fluid.box-top.red.outline
     %div#box-top.row
       %div#name-and-nav.blue.outline
         %div#name.pull-left
@@ -21,7 +21,6 @@
             %a{ href: "#"} News
       
       %ul#social-media-bar.green.outline 
-        %li
         %li
           %a{ href: "https://twitter.com/mkruza" }
             %img.social-media-widget.img-responsive{ src: "/assets/images/icon_twitter.jpg" }
@@ -43,25 +42,30 @@
           %img.img-responsive{ src: "/assets/images/me.jpg"}
 
         %div.col-md-4.col-sm-6.col-xs-12.yellow.outline.pull-right
-          %p.text-1 
-            Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
+          %h5 Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
         
         %div.col-md-2.col-sm-3.col-xs-6.green.outline
-          %img.img-responsive{ src: "/assets/images/preteens.jpg"}
+          %div.small-book
+            %img.img-responsive{ src: "/assets/images/preteens.jpg"}
         %div.col-md-2.col-sm-3.col-xs-6.green.outline
-          %img.img-responsive{ src: "/assets/images/novel_cover_smaller.jpg"}
+          %div.small-book
+            %img.img-responsive{ src: "/assets/images/novel_cover_smaller.jpg"}
         
 
-  %div.container.red.outline
+  %div.container-fluid.red.outline
 
     %div#box-middle-medium.row
       %div#novels.tall-rectangle
-        %h4 Novels
+        %h2 Novels
         %section.my-list What's more dangerous: asteroids and space aliens, or swirlies and high school punks? Join Matt, an up-and-coming graphic artist, as he navigates his own coming-of-age freshman year universe while relating in his sketchbook just how much high school feels like a dystopian space prison in which there are no rules, no order, and no friends.
+        %div.small-book
+          %img.img-responsive{ src: "/assets/images/novel_cover_smaller.jpg" }
+        %div.small-book
+          %img.img-responsive{ src: "/assets/images/15b.jpg" }
       %div#articles.tall-rectangle
-        %h4 Articles
+        %h2 Articles
       %div#blog.tall-rectangle
-        %h4 Blog
+        %h2 Blog
         %h5 Backpacking in Paradise
         %section.my-list There's more to Hawaii than luaus and waves... how about four days of backpacking through the Garden of Eden?
         %h5 Staying By His Side
