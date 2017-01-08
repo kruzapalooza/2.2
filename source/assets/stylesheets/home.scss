@@ -15,7 +15,7 @@ body {
 
 #name-and-nav {
   background-color: #674F23;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0.0)));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5)));
   border-radius: 1em;
   width: 90%;
   height: 30em;
@@ -54,7 +54,7 @@ body {
 
 #headshot-and-highlights {
   background-color: #674F33; 
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5)));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0.0)));
   border-radius: 1em;
   max-width: 90%;
   min-height: 10em;
@@ -167,7 +167,9 @@ body {
 }
 
 .head-1 {
-  background: #000000;
+  font-family: "Orbitron";
+  font-size: 18pt;
+  color: yellow;
 }
 
 
