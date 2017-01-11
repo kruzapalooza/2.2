@@ -1,5 +1,5 @@
 body {
-  background-color: #666666;
+  background-color: #600000;
 }
 
 #box-top {
@@ -15,7 +15,7 @@ body {
 
 #name-and-nav {
   background-color: #674F23;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,0.5)));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
   border-radius: 1em;
   width: 90%;
   height: 30em;
@@ -27,7 +27,7 @@ body {
 
 #name {
   font-family: "Orbitron";
-  font-size: 24pt;
+  font-size: 28pt;
   color: yellow;
   margin-left: 0.5em;
 }
@@ -166,12 +166,27 @@ body {
   color: white;
 }
 
-.head-1 {
+#novels-id {
   font-family: "Orbitron";
   font-size: 18pt;
   color: yellow;
 }
 
+#articles-id {
+  font-family: "Orbitron";
+  font-size: 18pt;
+  color: yellow;
+}
+
+#blog-id {
+  font-family: "Orbitron";
+  font-size: 18pt;
+  color: yellow;
+}
+
+.buy-link {
+  font-size: 12pt;
+}
 
 /* troubleshooting */
 /*
