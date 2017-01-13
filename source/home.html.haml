@@ -1,8 +1,9 @@
 %script{ src: "/assets/javascripts/global.js"}
 %head
-  %link{ href: "https://fonts.googleapis.com/css?family=Orbitron", rel: "stylesheet", type: "text/css"}
   %meta{ content: "width=device-width, initial-scale=1", name: "viewport"}
-
+  %link{ href: "https://fonts.googleapis.com/css?family=Orbitron", rel: "stylesheet", type: "text/css"}
+  %link{ href: "https://fonts.googleapis.com/css?family=Boogaloo", rel: "stylesheet"}
+  %link{ href: "https://fonts.googleapis.com/css?family=Audiowide|Boogaloo", rel: "stylesheet"}
 %body
 
   %div.screen_wide_spacer
@@ -66,6 +67,15 @@
         %section.my-list an essay I wrote recounting a fun yet unexpectedly scary day with my grandpa at Busch Gardens, appeared in Chicken Soup For The Soul Just For Preteens, an anthology of encouraging stories about that tumultuous time of youth.
       %div#articles.tall-rectangle
         %h1#articles-id Articles
+        %svg
+          %polygon{ fill: "green", points: "57 112   40 102   40 82   57 72   74 82   74 102"}
+          %polygon{ fill: "blue" , points: "21 112   4 102   4 82   21 72   38 82   38 102"}
+          %polygon{ fill: "yellow" , points: "21 48   4 38   4 18   21 8   38 18   38 38"}
+          %polygon{ fill: "orange" , points: "40 80   23 70   23 50   40 40   57 50   57 70"}
+          %polygon{ points: "57 48   40 38   40 18   57 8   74 18   74 38"}
+            %image{:x => "0", "xlink:href" => "/assets/images/icon_instagram.jpg", :y => "0"}
+
+
       %div#blog.tall-rectangle
         %h1#blog-id Blog
         %a.buy-link{ href: "kauai.html" } Backpacking in Paradise

@@ -185,7 +185,15 @@ body {
 }
 
 .buy-link {
-  font-size: 12pt;
+  font-size: 14pt;
+  font-family: 'Audiowide', cursive;
+}
+
+.hex {
+  cursor: pointer;
+  fill-opacity: 0.4;
+  stroke: #000;
+  stroke-width: 1;
 }
 
 /* troubleshooting */
