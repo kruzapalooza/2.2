@@ -15,7 +15,7 @@ body {
 
 #name-and-nav {
   background-color: #674F23;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(rgba(0,0,0,0)));
   border-radius: 1em;
   width: 90%;
   height: 30em;
@@ -52,12 +52,11 @@ body {
 }
 
 #headshot-and-highlights {
-  background-color: #111111; 
-  /* background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0.0))); */
+  background-color: #674F23; 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0.0))); 
   border-radius: 1em;
   max-width: 90%;
-  min-height: 10em;
-  max-height: 90%;
+  max-height: 80%;
   position: relative;
   top: 5em;
   left: 7em;
@@ -70,16 +69,15 @@ body {
   padding: 1em;
 }
 
-#small-book-grid {
-  max-height: 100%;
-  margin: auto 0;
-  max-width: 75%;
-}
 
 .small-book {
   margin: 1em;
-  max-width: 15em;
-  max-height: 100%;
+  max-width: 100%;
+}
+
+.narrow-book {
+  margin: 1em;
+  max-width: 100%;
 }
 
 /* smaller viewport */
@@ -95,12 +93,13 @@ body {
 }
 
 /* larger viewports */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .tall-rectangle {
     position: absolute;
     max-width: 100%;
     min-height: 60em;
-    padding: 2em;
+    /* padding-right: 4em; */
+    padding-right: 4%;
     margin: 0.5em;
     border-radius: 0.5em;
     width: 30%;
@@ -120,7 +119,7 @@ body {
 }
 
 /* larger viewports */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #novels {
     background-color: #674F23;
     top: 0em;
@@ -131,7 +130,7 @@ body {
 }
 
 /* larger viewports */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #articles {
     background-color: #674F33;
     top: 2.5em;
@@ -142,7 +141,7 @@ body {
 }
 
 /* larger viewports */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #blog {
     background-color: #674F43;
     top: 5em;
@@ -155,16 +154,50 @@ body {
 .my-list {
   color: #AAAAAA;
   font: sans-serif;
-  font-size: 11pt;
-  padding-left: 1em;
-  padding-right: 25%; 
+  font-size: 12pt;
+  padding: 1em;
+  text-align: justify;
 }
 
-.text-1 {
-  color: white;
+.subtitle {
+  color: #0084b4;
+  font-size: 17pt;
+  font-family: 'Audiowide', cursive;
+  text-align: center;
 }
 
+.menu-link {
+  font-family: "Orbitron";
+  font-size: 12pt;
+  color: #0084b4;
+  -webkit-transition:color .2s ease-out, background .2s ease-in;
+    &:hover { color: purple;}
+}
+
+.section-title {
+  background: transparent;
+  font-family: "Orbitron";
+  font-size: 18pt;
+  color: yellow;
+}
+
+.buy-link {
+  font-size: 14pt;
+  background-color: #000000;
+  width: 100%;
+  text-align: center;
+  clip-path: polygon(5% 50%, 10% 5%, 90% 5%, 95% 50%, 90% 95%, 10% 95%);
+  font-family: 'Audiowide', cursive;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  -webkit-transition:color .2s ease-out, background .2s ease-in;
+    &:hover { color: yellow; }
+}
+
+/*
 #novels-id {
+  background: transparent;
   font-family: "Orbitron";
   font-size: 18pt;
   color: yellow;
@@ -182,21 +215,14 @@ body {
   color: yellow;
 }
 
-.buy-link {
-  font-size: 14pt;
-  font-family: 'Audiowide', cursive;
-  margin: 0 auto;
-  float: none;
+
+#small-book-grid {
+  max-height: 100%;
+  margin: auto 0;
+  max-width: 75%;
 }
 
-.hex {
-  cursor: pointer;
-  fill-opacity: 0.4;
-  stroke: #000;
-  stroke-width: 1;
-}
-
-
+*/
 
 /* troubleshooting */
 /*

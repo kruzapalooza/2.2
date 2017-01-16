@@ -1,0 +1,55 @@
+@import "header"; 
+@import "footer";
+@import "home";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body { 
+background: #3E838C;
+
+  /* position */
+  position: relative; /* TECH NOTE: change to absolute; explain behavior */
+  margin: auto; /* TECH NOTE: what does this do? */
+  
+  .red {
+    width: 100%;
+  }
+
+  .green {
+    width: 100%;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .paradise-pic {
+    margin: 1em;
+    border: 15px solid #3e2b14;
+    border-radius: 1em;
+    /* width: 100%; */
+    max-height: 100%;
+  }
+
+  h1 { 
+    font-family: 'Galindo', cursive;
+    font-size: 36pt;
+    color: white;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: 'Galindo', cursive; 
+  }
+
+  h4 {
+    font-size: 14pt;
+  }
+
+}
+
+

@@ -4,7 +4,6 @@
   %script{ src: "/assets/javascripts/bootstrap.js"}
   %meta{ content: "width=device-width, initial-scale=1", name: "viewport"}
   %link{ href: "https://fonts.googleapis.com/css?family=Orbitron", rel: "stylesheet", type: "text/css"}
-  %link{ href: "https://fonts.googleapis.com/css?family=Boogaloo", rel: "stylesheet"}
   %link{ href: "https://fonts.googleapis.com/css?family=Audiowide|Boogaloo", rel: "stylesheet"}
 %body
 
@@ -17,11 +16,11 @@
           Marc S. Kruza
         %ul.nav.nav-tabs.pull-right
           %li{ role: "presentation"}
-            %a{ href: "#novels-id"} Novels
+            %a.menu-link{ href: "#novels-id"} Books
           %li{ role: "presentation"}
-            %a{ href: "#articles-id"} Articles
+            %a.menu-link{ href: "#articles-id"} Articles
           %li{ role: "presentation"}
-            %a{ href: "#blog-id"} Blog
+            %a.menu-link{ href: "#blog-id"} Blog
       
       %ul#social-media-bar.green.outline 
         %li
@@ -41,55 +40,58 @@
             %img.social-media-widget.img-responsive{ src: "/assets/images/icon_linked_in.png" }
 
       %div#headshot-and-highlights.row.blue.outline
-        %div#headshot.col-md-4.col-sm-6.col-xs-12.yellow.outline
+        %div.col-xs-3.yellow.outline
           %img.img-responsive{ src: "/assets/images/me.jpg"}
 
-        %div.col-md-4.col-sm-6.col-xs-12.yellow.outline.pull-right.my-list
-          %h5 Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
+        %div.col-xs-3.yellow.outline.my-list
+          %section.my-list Having graduated from Florida State with degrees in Computer Science and Music Composition, my interests range from writing novels to writing computer programs, and from singing in church to playing in a local rock band. I love beaches, mountains, surfing and hiking... and writing about them. I'd love to find a way to put my talents to work for you!
         
-        %div.col-md-2.col-sm-3.col-xs-6.green.outline
+        %div.col-xs-3.green.outline
           %div.small-book
             %img.img-responsive{ src: "/assets/images/15b.jpg" }
-        %div.col-md-2.col-sm-3.col-xs-6.green.outline
+        %div.col-xs-3.green.outline
           %div.small-book
             %img.img-responsive{ src: "/assets/images/novel_cover_smaller.jpg"}
         
-
   %div.container-fluid.red.outline
 
     %div#box-middle-medium.row
       %div#novels.tall-rectangle
-        %h1#novels-id Novels
-        %div
-          %a.buy-link Me, Myself and I'm Lost
+        %h1.section-title#novels-id Books
+        %div.subtitle Me, Myself and I'm Lost
         %div.row
-          %div.col-md-6
-            %a.buy-link{ href: "http://www.amazon.com/Me-Myself-Im-Lost-Nerd/dp/150850234X/ref=sr_1_2?ie=UTF8&qid=1431172322&sr=8-2&keywords=me%2C+myself+and+i%27m+lost" } Purchase book
-          %div.col-md-6
-            %a.buy-link{ href: "https://www.amazon.com/Me-Myself-Im-Lost-Freshman-ebook/dp/B00XD5XWHM/ref=sr_1_1?ie=UTF8&qid=1431172322&sr=8-1&keywords=me%2C+myself+and+i%27m+lost" } Purchase Kindle
+          %a.buy-link.col-xs-6{ href: "http://www.amazon.com/Me-Myself-Im-Lost-Nerd/dp/150850234X/ref=sr_1_2?ie=UTF8&qid=1431172322&sr=8-2&keywords=me%2C+myself+and+i%27m+lost" } Buy Book
+          %a.buy-link.col-xs-6.pull-right{ href: "https://www.amazon.com/Me-Myself-Im-Lost-Freshman-ebook/dp/B00XD5XWHM/ref=sr_1_1?ie=UTF8&qid=1431172322&sr=8-1&keywords=me%2C+myself+and+i%27m+lost" } Buy Kindle
         %section.my-list What's more dangerous: asteroids and space aliens, or swirlies and high school punks? Join Matt, an up-and-coming graphic artist, as he navigates his own coming-of-age freshman year universe while relating in his sketchbook just how much high school feels like a dystopian space prison in which there are no rules, no order, and no friends.
 
         %div.row
-          %div.small-book.col-xs-6
-            %img.img-responsive{ src: "/assets/images/novel_cover_smaller.jpg" }
-          %div.small-book.col-xs-6
+          %div.narrow-book.col-xs-5
+            %img.img-responsive{ src: "/assets/images/novel_cover_smaller.jpg"}
+          %div.narrow-book.col-xs-5
             %img.img-responsive{ src: "/assets/images/preteens.jpg" }
         %div
-          %a.buy-link.center-block Staying By His Side
-          %div.row{ margin: "0 auto"}
-            %a.buy-link.col-xs-6{ href: "https://www.amazon.com/Chicken-Soup-Soul-Preteens-Inspiration/dp/1935096737" } Purchase Book
-            %a.buy-link.col-xs-6{ href: "https://www.amazon.com/Chicken-Soup-Soul-Preteens-Inspiration-ebook/dp/B004G8QTLQ/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" } Purchase Kindle      
+          %div.subtitle Staying By His Side
+          %div.row
+            %a.buy-link.col-xs-6{ href: "https://www.amazon.com/Chicken-Soup-Soul-Preteens-Inspiration/dp/1935096737" } Buy Book
+            %a.buy-link.col-xs-6.pull-right{ href: "https://www.amazon.com/Chicken-Soup-Soul-Preteens-Inspiration-ebook/dp/B004G8QTLQ/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=" } Buy Kindle      
         %section.my-list This is an essay I wrote recounting a fun yet unexpectedly scary day with my grandpa at Busch Gardens, appeared in Chicken Soup For The Soul Just For Preteens&#9400, an anthology of encouraging stories about that tumultuous time of youth.
 
       %div#articles.tall-rectangle
-        %h1#articles-id Articles
+        %h1.section-title#articles-id Articles
+        %div.row
+          %a.buy-link.col-xs-12{ href: "http://charlestondaily.net/mount-pleasant-author-inspires-young-readers-with-new-hybrid-graphic-young-adult-novel/" } Charleston Daily Interviews Author 
+        %section.my-list CD:  What do you want your readers to take away from your novel? 
+        %section.my-list MK:  Adolescence is only a temporary condition. Asking for help in times of severe psychological stress is a sign of strength, not weakness.    
+        %div.row
+          %a.buy-link.col-xs-12{ href: "napali.html" } Backpacking in Paradise
+        %section.my-list There's more to Hawaii than luaus and waves... how about four days of backpacking through the Garden of Eden?
+        %div.row
+          %a.buy-link.col-xs-12{ href: "soar_cessna.html" } Soar Cessna
+        %section.my-list When your car breaks down on the drive home for Christmas, do you: call your pilot friend and have him fly you home, learn that "FORD" stands for "found on roadside dead," call a AAA towtruck, or "all of the above?"
 
       %div#blog.tall-rectangle
-        %h1#blog-id Blog
-        %a.buy-link{ href: "kauai.html" } Backpacking in Paradise
-        %section.my-list There's more to Hawaii than luaus and waves... how about four days of backpacking through the Garden of Eden?
-        %a.buy-link{ href: "soar_cessna.html" } Soar Cessna
-        %section.my-list When your car breaks down on the drive home for Christmas, do you: call your pilot friend and have him fly you home, learn that "FORD" stands for "found on roadside dead," call a AAA towtruck, or "all of the above?"
+        %h1.section-title#blog-id Blog
+
 
 
    
